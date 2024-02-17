@@ -1,5 +1,6 @@
 # .gitignore of heliostat_model_50cm
-node_modules
+/node_modules/
 build
 dist
 tmp
+/output/

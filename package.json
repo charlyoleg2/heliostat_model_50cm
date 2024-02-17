@@ -6,7 +6,12 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"designix": "designix",
+		"designix-help": "designix --help",
+		"base_list-outopt": "designix --design heliostat/base list-outopt",
+		"base_json_param": "designix --design=heliostat/base write json_param",
+		"base_openscad": "designix --design=heliostat/base --param=base/px_base_v10.json --outDir=base write scad_3d_openscad",
+		"ls_output": "ls -ltra output"
 	},
 	"repository": {
 		"type": "git",
