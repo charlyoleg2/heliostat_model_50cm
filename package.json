@@ -1,0 +1,27 @@
+{
+	"name": "heliostat_model_50cm",
+  	"version": "0.0.1",
+  	"description": "parameters and stl for a model of heliostat",
+	"private": true,
+  	"type": "module",
+  	"main": "index.js",
+  	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+  	},
+  	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/heliostat_model_50cm.git"
+  	},
+  	"keywords": [
+		"heliostat",
+  	  	"model",
+  	  	"designix",
+  	  	"parametrix"
+  	],
+  	"author": "charlyoleg2",
+  	"license": "ISC",
+  	"bugs": {
+		"url": "https://github.com/charlyoleg2/heliostat_model_50cm/issues"
+  	},
+  	"homepage": "https://github.com/charlyoleg2/heliostat_model_50cm#readme"
+}
