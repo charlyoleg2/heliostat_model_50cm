@@ -7,7 +7,7 @@ import { promisify } from 'util';
 const c_Parts = {
 	heliostat: 'heliostat_v01',
 	heliostat_2: 'heliostat_2_v01',
-	//base: 'base_v01',
+	base: 'base_v01',
 	pole_static: 'pole_static_v01',
 	pole_rotor: 'pole_rotor_v01',
 	rake: 'rake_v01',
@@ -26,6 +26,7 @@ function getCmd(dName, fName) {
 	//rCmd.push(`npx designix -d=heliostat/${dName} -o=${dName} --outFileName=px_${fName}.json write json_param`);
 	rCmd.push(`npx designix -d=heliostat/${dName} -p=${dName}/px_${fName}.json -o=${dName} --outFileName=${fName}.scad write scad_3d_openscad`);
 	rCmd.push(`openscad -o ${dName}/${fName}.stl ${dName}/${fName}.scad`);
+	//rCmd.push(`npx shx rm -fr ${dName}`);
 	return rCmd
 }
 
@@ -67,11 +68,24 @@ async function loopDesign(dList) {
 
 async function mhcli(args) {
 	//console.log(args);
-	if (args.length > 2) {
+	const c_flag_all = '--all';
+	const allList = Object.keys(c_Parts);
+	if (args.length === 3 && args[2] === c_flag_all) {
+		await loopDesign(allList);
+	} else if (args.length > 2) {
 		await loopDesign(args.slice(2));
 	} else {
-		const allList = Object.keys(c_Parts);
-		await loopDesign(allList);
+		console.log('err206: no argument provided!');
+		console.log(`Possible arguments: ${c_flag_all} or the following design names:`);
+		let str1 = '';
+		let str2 = '';
+		for (const [ idx, oneDesign ] of allList.entries()) {
+			str1 += ` ${oneDesign}`;
+			str2 += `${(idx + 1).toString().padStart(2, ' ')} : ${oneDesign}\n`;
+		}
+		console.log(str1);
+		console.log(str2);
+		console.log('info404: Nothing done!');
 	}
 }
 
