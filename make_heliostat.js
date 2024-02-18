@@ -23,9 +23,9 @@ function getCmd(dName, fName) {
 	const rCmd = [];
 	//rCmd.push('pwd');
 	//rCmd.push(`ls ${dName}`);
-	rCmd.push(`npx designix -d=heliostat/${dName} -o=${dName} --outFileName=px_${fName}.json write json_param`);
-	//rCmd.push(`npx designix -d=heliostat/${dName} -p=${dName}/px_${fName}.json -o=${dName} --outFileName=${fName}.scad write scad_3d_openscad`);
-	//rCmd.push(`openscad -o ${dName}/${fName}.stl ${dName}/${fName}.scad`);
+	//rCmd.push(`npx designix -d=heliostat/${dName} -o=${dName} --outFileName=px_${fName}.json write json_param`);
+	rCmd.push(`npx designix -d=heliostat/${dName} -p=${dName}/px_${fName}.json -o=${dName} --outFileName=${fName}.scad write scad_3d_openscad`);
+	rCmd.push(`openscad -o ${dName}/${fName}.stl ${dName}/${fName}.scad`);
 	return rCmd
 }
 
