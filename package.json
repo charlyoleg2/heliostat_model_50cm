@@ -12,6 +12,8 @@
 		"base_json_param": "designix --design=heliostat/base write json_param",
 		"base_openscad_long": "designix --design=heliostat/base --param=base/px_base_v01.json --outDir=base --outFileName=base_v01.scad write scad_3d_openscad",
 		"base_openscad": "designix -d=heliostat/base -p=base/px_base_v01.json -o=base --outFileName=base_v01.scad write scad_3d_openscad",
+		"base_view": "openscad base/base_v01.scad",
+		"base_stl": "openscad -o base/base_v01.stl base/base_v01.scad",
 		"ls_output": "ls -ltra output"
 	},
 	"repository": {
