@@ -14,6 +14,7 @@
 		"base_openscad": "designix -d=heliostat/base -p=base/px_base_v01.json -o=base --outFileName=base_v01.scad write scad_3d_openscad",
 		"base_view": "openscad base/base_v01.scad",
 		"base_stl": "openscad -o base/base_v01.stl base/base_v01.scad",
+		"make_heliostat": "node make_heliostat.js",
 		"ls_output": "ls -ltra output"
 	},
 	"repository": {
