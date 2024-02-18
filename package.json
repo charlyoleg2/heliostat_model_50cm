@@ -15,6 +15,7 @@
 		"base_view": "openscad base/base_v01.scad",
 		"base_stl": "openscad -o base/base_v01.stl base/base_v01.scad",
 		"make_heliostat": "node make_heliostat.js",
+		"git_clean": "git clean -f",
 		"ls_output": "ls -ltra output"
 	},
 	"repository": {
