@@ -1,0 +1,29 @@
+{
+  "lastModif": "20240218_090739",
+  "pVal": {
+    "LH": 1600,
+    "LV": 1000,
+    "LZ": 40,
+    "nx": 9,
+    "ny": 9,
+    "main_direction": 0,
+    "crenel": 0,
+    "first_row": 9,
+    "second_row": 9,
+    "EH": 10,
+    "EH_gradient": 0,
+    "EH_sup": 500,
+    "EH_cycle": 1,
+    "EH_start": 0,
+    "EH_shape": 0,
+    "EV": 10,
+    "EV_gradient": 0,
+    "EV_sup": 500,
+    "EV_cycle": 1,
+    "EV_start": 0,
+    "EV_shape": 0,
+    "power_efficiency": 16,
+    "solar_power": 816
+  },
+  "comment": "Written by geom_cli"
+}
