@@ -38,3 +38,34 @@ npm run
 npx designix --help
 ```
 
+Vocabulary
+----------
+
+- Design: A parametrizable 3D parts. Desginix is a collection of designs.
+- Reference: A particular parametrization of a design.
+- Instance: The realization of a reference.
+
+
+References for the heliostat model
+----------------------------------
+
+ID | Reference       | Design         | Nb of instances
+---|-----------------|----------------|----------------
+1  | heliostat\_2    | heliostat\_2   | 0
+2  | base            | base           | 1
+3  | pole\_static    | pole\_static   | 1
+4  | pole\_rotor     | pole\_rotor    | 1
+5  | rake            | rake           | 0
+6  | rake\_stopper   | rake\_stopper  | 1
+7  | swing           | swing          | 1
+8  | rod             | rod            | 6
+9  | trapeze         | trapeze        | 24
+
+
+Unused designs in the heliostat model
+-------------------------------------
+
+- heliostat
+- spider
+- surface
+
