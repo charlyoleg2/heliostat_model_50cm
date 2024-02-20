@@ -61,6 +61,8 @@ ID | Reference       | Design         | Nb of instances
 8  | rod             | rod            | 6
 9  | trapeze         | trapeze        | 24
 
+Each reference has its own directory with its json-parametrization, scad-script and stl-file.
+
 
 Unused designs in the heliostat model
 -------------------------------------

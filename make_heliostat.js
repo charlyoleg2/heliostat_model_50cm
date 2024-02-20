@@ -27,6 +27,7 @@ function inferDesignName(instanceName) {
 
 function getCmd(dName, fName) {
 	const desiName = inferDesignName(dName);
+	console.log(`info456: reference name: ${dName}   design name: ${desiName}`);
 	const rCmd = [];
 	//rCmd.push('pwd');
 	//rCmd.push(`ls ${dName}`);
