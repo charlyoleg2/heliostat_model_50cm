@@ -36,6 +36,7 @@ cd heliostat_model_50cm
 npm install
 npm run
 npx designix --help
+npx designix-ui
 ```
 
 Vocabulary

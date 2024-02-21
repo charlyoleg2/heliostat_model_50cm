@@ -6,6 +6,7 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
+		"designix-ui": "designix-ui",
 		"designix": "designix",
 		"designix-help": "designix --help",
 		"base_list-outopt": "designix --design heliostat/base list-outopt",
@@ -35,6 +36,7 @@
 	},
 	"homepage": "https://github.com/charlyoleg2/heliostat_model_50cm#readme",
 	"devDependencies": {
-		"designix-cli": "^0.5.10"
+		"designix-cli": "^0.5.10",
+		"designix-uis": "^0.5.2"
 	}
 }
