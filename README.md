@@ -61,8 +61,8 @@ ID | Reference       | Design         | Nb of instances
 5  | rake            | rake           | 0
 6  | rake\_stopper   | rake\_stopper  | 1
 7  | swing           | swing          | 1
-8  | rod             | rod            | 6
-9  | trapeze         | trapeze        | 24
+8  | rod             | rod            | 5
+9  | trapeze         | trapeze        | 35
 
 Each reference has its own directory with its json-parametrization, scad-script and stl-file.
 
