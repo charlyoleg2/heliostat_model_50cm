@@ -35,8 +35,10 @@ git clone https://github.com/charlyoleg2/heliostat_model_50cm
 cd heliostat_model_50cm
 npm install
 npm run
-npx designix --help
+npm run designix-ui
 npx designix-ui
+npx designix --help
+./make_heliostat.js
 ```
 
 Vocabulary
