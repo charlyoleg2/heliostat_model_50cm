@@ -9,7 +9,7 @@ const c_Parts = {
 	heliostat_2: 'heliostat_2_v01',
 	base: 'base_v01',
 	pole_static: 'pole_static_v01',
-	pole_rotor: 'pole_rotor_v01',
+	vaxis: 'vaxis_v01',
 	rake: 'rake_v01',
 	rake_stopper: 'rake_stopper_v01',
 	spider: 'spider_v01',
