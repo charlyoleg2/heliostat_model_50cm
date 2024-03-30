@@ -1,0 +1,16 @@
+{
+  "lastModif": "20240330_213443",
+  "partName": "vaxis",
+  "pVal": {
+    "D1": 600,
+    "D2": 400,
+    "H1": 8000,
+    "E1": 5,
+    "E2": 30,
+    "base holes": 0,
+    "N1": 24,
+    "D3": 40,
+    "L1": 45
+  },
+  "comment": "Written by geom_cli"
+}

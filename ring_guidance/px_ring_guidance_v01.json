@@ -1,0 +1,22 @@
+{
+  "lastModif": "20240330_213444",
+  "partName": "ring_guidance",
+  "pVal": {
+    "D1": 700,
+    "N1": 6,
+    "D2": 600,
+    "leg details": 0,
+    "D3": 30,
+    "D4": 50,
+    "L1": 90,
+    "R5": 20,
+    "inner": 0,
+    "D6": 300,
+    "N2": 8,
+    "L2": 50,
+    "D7": 80,
+    "thickness": 0,
+    "T1": 10
+  },
+  "comment": "Written by geom_cli"
+}

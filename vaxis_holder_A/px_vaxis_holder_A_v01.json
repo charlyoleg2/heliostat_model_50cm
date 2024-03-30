@@ -1,0 +1,23 @@
+{
+  "lastModif": "20240330_213443",
+  "partName": "vaxis_holder",
+  "pVal": {
+    "PHD1": 700,
+    "PHD2": 900,
+    "PHD5": 800,
+    "PHN1": 6,
+    "screw holes": 0,
+    "PHD3": 40,
+    "PHR4": 40,
+    "PHL2": 120,
+    "PHR6": 20,
+    "section": 0,
+    "PHE1": 10,
+    "PHH1": 50,
+    "PHA": 5,
+    "PHL1": 300,
+    "PHE2": 10,
+    "PHE3": 10
+  },
+  "comment": "Written by geom_cli"
+}
