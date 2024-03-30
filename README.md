@@ -52,19 +52,47 @@ Vocabulary
 References for the heliostat model
 ----------------------------------
 
-ID | Reference       | Design         | Nb of instances
----|-----------------|----------------|----------------
-1  | heliostat\_2    | heliostat\_2   | 0
-2  | base            | base           | 1
-3  | pole\_static    | pole\_static   | 1
-4  | vaxis           | vaxis          | 1
-5  | rake            | rake           | 0
-6  | rake\_stopper   | rake\_stopper  | 1
-7  | swing           | swing          | 1
-8  | rod             | rod            | 5
-9  | trapeze         | trapeze        | 35
+ID | Reference           | Design             | Nb of instances
+---|---------------------|--------------------|----------------
+1  | heliostat\_2        | heliostat\_2       | 0
+2  | base                | base               | 1
+3  | pole\_static        | pole\_static       | 1
+4  | vaxis               | vaxis              | 1
+5  | vaxis\_holder       | vaxis\_holder      | 0
+6  | ring                | ring               | 1
+7  | ring\_guidance      | ring\_guidance     | 1
+8  | vaxis\_guidance     | vaxis\_guidance    | 2
+9  | rake                | rake               | 0
+10 | rake\_stopper       | rake\_stopper      | 1
+11 | haxis\_guidance     | haxis\_guidance    | 8
+12 | swing               | swing              | 1
+13 | rod                 | rod                | 5
+14 | trapeze             | trapeze            | 35
 
 Each reference has its own directory with its json-parametrization, scad-script and stl-file.
+
+
+Additional references for spare and study
+-----------------------------------------
+
+ID | Reference           | Design             | Nb of instances
+---|---------------------|--------------------|----------------
+1  | heliostat\_2        | heliostat\_2       | 0
+2  | base                | base               | 1
+3  | pole\_static        | pole\_static       | 1
+4  | vaxis               | vaxis              | 1
+5  | vaxis\_holder\_A    | vaxis\_holder      | 1
+6  | vaxis\_holder\_B1   | vaxis\_holder      | 1
+7  | vaxis\_holder\_B2   | vaxis\_holder      | 1
+8  | ring                | ring               | 1
+9  | ring\_guidance      | ring\_guidance     | 1
+10 | vaxis\_guidance     | vaxis\_guidance    | 2
+11 | rake                | rake               | 0
+12 | rake\_stopper       | rake\_stopper      | 1
+13 | haxis\_guidance     | haxis\_guidance    | 2
+14 | swing               | swing              | 1
+15 | rod                 | rod                | 1
+16 | trapeze             | trapeze            | 1
 
 
 Unused designs in the heliostat model
