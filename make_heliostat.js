@@ -10,8 +10,15 @@ const c_Parts = {
 	base: 'base_v01',
 	pole_static: 'pole_static_v01',
 	vaxis: 'vaxis_v01',
+	vaxis_holder_A: 'vaxis_holder_A_v01',
+	vaxis_holder_B1: 'vaxis_holder_B1_v01',
+	vaxis_holder_B2: 'vaxis_holder_B2_v01',
+	ring: 'ring_v01',
+	ring_guidance: 'ring_guidance_v01',
+	vaxis_guidance: 'vaxis_guidance_v01',
 	rake: 'rake_v01',
 	rake_stopper: 'rake_stopper_v01',
+	haxis_guidance: 'haxis_guidance_v01',
 	spider: 'spider_v01',
 	swing: 'swing_v01',
 	rod: 'rod_v01',
@@ -20,7 +27,7 @@ const c_Parts = {
 };
 
 function inferDesignName(instanceName) {
-	const re = /_[A-Z]$/;
+	const re = /_[A-Z][0-9]*$/;
 	const rDesignName = instanceName.replace(re, '');
 	return rDesignName
 }
