@@ -3,6 +3,10 @@ ca_rake_faceCone_0 = [ [ 25.0000, 0.0000 ],[ 25.0000, 10.0000 ],[ 15.0000, 130.0
 cb_rake_faceCone_0 = [  0, 1, 2, 3, 4, 5, 6 ];
 a_rake_faceCone = concat(ca_rake_faceCone_0);
 b_rake_faceCone = [cb_rake_faceCone_0];
+ca_rake_faceConeHollow_0 = [ [ 0.0000, 95.0000 ],[ 15.9097, 95.0000 ],[ 23.0000, 9.9168 ],[ 23.0000, 4.0000 ],[ 0.0000, 4.0000 ],[ 0.0000, 95.0000 ] ];
+cb_rake_faceConeHollow_0 = [  0, 1, 2, 3, 4, 5 ];
+a_rake_faceConeHollow = concat(ca_rake_faceConeHollow_0);
+b_rake_faceConeHollow = [cb_rake_faceConeHollow_0];
 ca_rake_faceBeam_0 = [ [ 15.0000, 110.0000 ],[ 13.8582, 115.7403 ],[ 10.6066, 120.6066 ],[ 5.7403, 123.8582 ],[ 0.0000, 125.0000 ],[ -5.7403, 123.8582 ],[ -10.6066, 120.6066 ],[ -13.8582, 115.7403 ],[ -15.0000, 110.0000 ],[ -13.8582, 104.2597 ],[ -10.6066, 99.3934 ],[ -5.7403, 96.1418 ],[ -0.0000, 95.0000 ],[ 5.7403, 96.1418 ],[ 10.6066, 99.3934 ],[ 13.8582, 104.2597 ],[ 15.0000, 110.0000 ] ];
 cb_rake_faceBeam_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
 ca_rake_faceBeam_1 = [ [ 13.0000, 110.0000 ],[ 12.0104, 114.9749 ],[ 9.1924, 119.1924 ],[ 4.9749, 122.0104 ],[ 0.0000, 123.0000 ],[ -4.9749, 122.0104 ],[ -9.1924, 119.1924 ],[ -12.0104, 114.9749 ],[ -13.0000, 110.0000 ],[ -12.0104, 105.0251 ],[ -9.1924, 100.8076 ],[ -4.9749, 97.9896 ],[ -0.0000, 97.0000 ],[ 4.9749, 97.9896 ],[ 9.1924, 100.8076 ],[ 12.0104, 105.0251 ],[ 13.0000, 110.0000 ] ];
@@ -67,21 +71,21 @@ ca_rake_faceDisc_25 = [ [ 11.9576, -3.1705 ],[ 11.9481, -3.1227 ],[ 11.9210, -3.
 cb_rake_faceDisc_25 = [  425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441 ];
 a_rake_faceDisc = concat(ca_rake_faceDisc_0, ca_rake_faceDisc_1, ca_rake_faceDisc_2, ca_rake_faceDisc_3, ca_rake_faceDisc_4, ca_rake_faceDisc_5, ca_rake_faceDisc_6, ca_rake_faceDisc_7, ca_rake_faceDisc_8, ca_rake_faceDisc_9, ca_rake_faceDisc_10, ca_rake_faceDisc_11, ca_rake_faceDisc_12, ca_rake_faceDisc_13, ca_rake_faceDisc_14, ca_rake_faceDisc_15, ca_rake_faceDisc_16, ca_rake_faceDisc_17, ca_rake_faceDisc_18, ca_rake_faceDisc_19, ca_rake_faceDisc_20, ca_rake_faceDisc_21, ca_rake_faceDisc_22, ca_rake_faceDisc_23, ca_rake_faceDisc_24, ca_rake_faceDisc_25);
 b_rake_faceDisc = [cb_rake_faceDisc_0, cb_rake_faceDisc_1, cb_rake_faceDisc_2, cb_rake_faceDisc_3, cb_rake_faceDisc_4, cb_rake_faceDisc_5, cb_rake_faceDisc_6, cb_rake_faceDisc_7, cb_rake_faceDisc_8, cb_rake_faceDisc_9, cb_rake_faceDisc_10, cb_rake_faceDisc_11, cb_rake_faceDisc_12, cb_rake_faceDisc_13, cb_rake_faceDisc_14, cb_rake_faceDisc_15, cb_rake_faceDisc_16, cb_rake_faceDisc_17, cb_rake_faceDisc_18, cb_rake_faceDisc_19, cb_rake_faceDisc_20, cb_rake_faceDisc_21, cb_rake_faceDisc_22, cb_rake_faceDisc_23, cb_rake_faceDisc_24, cb_rake_faceDisc_25];
-ca_rake_faceHand_0 = [ [ 12.9904, 117.5000 ],[ 12.9904, 162.5000 ],[ 8.6603, 165.0000 ],[ 6.4279, 162.3396 ],[ 3.4202, 160.6031 ],[ 0.0000, 160.0000 ],[ -3.4202, 160.6031 ],[ -6.4279, 162.3396 ],[ -8.6603, 165.0000 ],[ -12.9904, 162.5000 ],[ -12.9904, 117.5000 ],[ -9.6418, 121.4907 ],[ -5.1303, 124.0954 ],[ -0.0000, 125.0000 ],[ 5.1303, 124.0954 ],[ 9.6418, 121.4907 ],[ 12.9904, 117.5000 ] ];
+ca_rake_faceHand_0 = [ [ 12.9904, 117.5000 ],[ 21.6506, 157.5000 ],[ 8.6603, 165.0000 ],[ 6.4279, 162.3396 ],[ 3.4202, 160.6031 ],[ 0.0000, 160.0000 ],[ -3.4202, 160.6031 ],[ -6.4279, 162.3396 ],[ -8.6603, 165.0000 ],[ -21.6506, 157.5000 ],[ -12.9904, 117.5000 ],[ -9.6418, 121.4907 ],[ -5.1303, 124.0954 ],[ -0.0000, 125.0000 ],[ 5.1303, 124.0954 ],[ 9.6418, 121.4907 ],[ 12.9904, 117.5000 ] ];
 cb_rake_faceHand_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
 a_rake_faceHand = concat(ca_rake_faceHand_0);
 b_rake_faceHand = [cb_rake_faceHand_0];
 ca_rake_faceWing_0 = [ [ 5.0000, 0.0000 ],[ 4.6194, 1.9134 ],[ 3.5355, 3.5355 ],[ 1.9134, 4.6194 ],[ 0.0000, 5.0000 ],[ -1.9134, 4.6194 ],[ -3.5355, 3.5355 ],[ -4.6194, 1.9134 ],[ -5.0000, 0.0000 ],[ -4.6194, -1.9134 ],[ -3.5355, -3.5355 ],[ -1.9134, -4.6194 ],[ -0.0000, -5.0000 ],[ 1.9134, -4.6194 ],[ 3.5355, -3.5355 ],[ 4.6194, -1.9134 ],[ 5.0000, 0.0000 ] ];
 cb_rake_faceWing_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
-ca_rake_faceWing_1 = [ [ -5.0000, 0.0000 ],[ -4.6194, -1.9134 ],[ -3.5355, -3.5355 ],[ -1.9134, -4.6194 ],[ -0.0000, -5.0000 ],[ 1.9134, -4.6194 ],[ 3.5355, -3.5355 ],[ 4.6194, -1.9134 ],[ 5.0000, -0.0000 ],[ 4.6194, 1.9134 ],[ 3.5355, 3.5355 ],[ 1.9134, 4.6194 ],[ 0.0000, 5.0000 ],[ -1.9134, 4.6194 ],[ -3.5355, 3.5355 ],[ -4.6194, 1.9134 ],[ -5.0000, 0.0000 ] ];
+ca_rake_faceWing_1 = [ [ 3.0000, 0.0000 ],[ 2.7716, 1.1481 ],[ 2.1213, 2.1213 ],[ 1.1481, 2.7716 ],[ 0.0000, 3.0000 ],[ -1.1481, 2.7716 ],[ -2.1213, 2.1213 ],[ -2.7716, 1.1481 ],[ -3.0000, 0.0000 ],[ -2.7716, -1.1481 ],[ -2.1213, -2.1213 ],[ -1.1481, -2.7716 ],[ -0.0000, -3.0000 ],[ 1.1481, -2.7716 ],[ 2.1213, -2.1213 ],[ 2.7716, -1.1481 ],[ 3.0000, 0.0000 ] ];
 cb_rake_faceWing_1 = [  17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ];
 a_rake_faceWing = concat(ca_rake_faceWing_0, ca_rake_faceWing_1);
 b_rake_faceWing = [cb_rake_faceWing_0, cb_rake_faceWing_1];
-ca_rake_faceWingHollow_0 = [ [ -5.0000, 0.0000 ],[ -4.6194, -1.9134 ],[ -3.5355, -3.5355 ],[ -1.9134, -4.6194 ],[ -0.0000, -5.0000 ],[ 1.9134, -4.6194 ],[ 3.5355, -3.5355 ],[ 4.6194, -1.9134 ],[ 5.0000, -0.0000 ],[ 4.6194, 1.9134 ],[ 3.5355, 3.5355 ],[ 1.9134, 4.6194 ],[ 0.0000, 5.0000 ],[ -1.9134, 4.6194 ],[ -3.5355, 3.5355 ],[ -4.6194, 1.9134 ],[ -5.0000, 0.0000 ] ];
+ca_rake_faceWingHollow_0 = [ [ 3.0000, 0.0000 ],[ 2.7716, 1.1481 ],[ 2.1213, 2.1213 ],[ 1.1481, 2.7716 ],[ 0.0000, 3.0000 ],[ -1.1481, 2.7716 ],[ -2.1213, 2.1213 ],[ -2.7716, 1.1481 ],[ -3.0000, 0.0000 ],[ -2.7716, -1.1481 ],[ -2.1213, -2.1213 ],[ -1.1481, -2.7716 ],[ -0.0000, -3.0000 ],[ 1.1481, -2.7716 ],[ 2.1213, -2.1213 ],[ 2.7716, -1.1481 ],[ 3.0000, 0.0000 ] ];
 cb_rake_faceWingHollow_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
 a_rake_faceWingHollow = concat(ca_rake_faceWingHollow_0);
 b_rake_faceWingHollow = [cb_rake_faceWingHollow_0];
-ca_rake_faceDoor_0 = [ [ 12.2744, 15.2076 ],[ 9.3577, 50.2076 ],[ 9.1119, 51.0988 ],[ 8.5591, 51.8397 ],[ 7.7748, 52.3291 ],[ 6.8663, 52.5000 ],[ -6.8663, 52.5000 ],[ -7.7748, 52.3291 ],[ -8.5591, 51.8397 ],[ -9.1119, 51.0988 ],[ -9.3577, 50.2076 ],[ -12.2744, 15.2076 ],[ -12.2067, 14.3872 ],[ -11.8763, 13.6332 ],[ -11.3189, 13.0274 ],[ -10.5950, 12.6355 ],[ -9.7830, 12.5000 ],[ 9.7830, 12.5000 ],[ 10.5950, 12.6355 ],[ 11.3189, 13.0274 ],[ 11.8763, 13.6332 ],[ 12.2067, 14.3872 ],[ 12.2744, 15.2076 ] ];
+ca_rake_faceDoor_0 = [ [ -9.7830, 12.5000 ],[ 9.7830, 12.5000 ],[ 10.5950, 12.6355 ],[ 11.3189, 13.0274 ],[ 11.8763, 13.6332 ],[ 12.2067, 14.3872 ],[ 12.2744, 15.2076 ],[ 9.3577, 50.2076 ],[ 9.1119, 51.0988 ],[ 8.5591, 51.8397 ],[ 7.7748, 52.3291 ],[ 6.8663, 52.5000 ],[ -6.8663, 52.5000 ],[ -7.7748, 52.3291 ],[ -8.5591, 51.8397 ],[ -9.1119, 51.0988 ],[ -9.3577, 50.2076 ],[ -12.2744, 15.2076 ],[ -12.2067, 14.3872 ],[ -11.8763, 13.6332 ],[ -11.3189, 13.0274 ],[ -10.5950, 12.6355 ],[ -9.7830, 12.5000 ] ];
 cb_rake_faceDoor_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ];
 a_rake_faceDoor = concat(ca_rake_faceDoor_0);
 b_rake_faceDoor = [cb_rake_faceDoor_0];
@@ -92,16 +96,22 @@ module subpax_rake_cone () {
 			   rotate_extrude() polygon(a_rake_faceCone, b_rake_faceCone);
 }
 
+module subpax_rake_coneHollow () {
+	translate( [ 0, 0, 0 ])
+		rotate( [ 0, 0, 0 ])
+			   rotate_extrude() polygon(a_rake_faceConeHollow, b_rake_faceConeHollow);
+}
+
 module subpax_rake_beam () {
-	translate( [ 0, 143, 0 ])
+	translate( [ 0, 142.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 286) polygon(a_rake_faceBeam, b_rake_faceBeam);
+			   linear_extrude(height = 285) polygon(a_rake_faceBeam, b_rake_faceBeam);
 }
 
 module subpax_rake_beamHollow () {
-	translate( [ 0, 143, 0 ])
+	translate( [ 0, 142.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 286) polygon(a_rake_faceBeamHollow, b_rake_faceBeamHollow);
+			   linear_extrude(height = 285) polygon(a_rake_faceBeamHollow, b_rake_faceBeamHollow);
 }
 
 module subpax_rake_disc () {
@@ -111,57 +121,57 @@ module subpax_rake_disc () {
 }
 
 module subpax_rake_wing_right () {
-	translate( [ 0, 18.966664289197727, 33.28152152646464 ])
-		rotate( [ -60.66577010971745, 0, 0 ])
-			   linear_extrude(height = 138.96079881522775) polygon(a_rake_faceWing, b_rake_faceWing);
+	translate( [ 0, 18.958966906863353, 33.27250957281965 ])
+		rotate( [ -60.55964241106459, 0, 0 ])
+			   linear_extrude(height = 138.513600108457) polygon(a_rake_faceWing, b_rake_faceWing);
 }
 
 module subpax_rake_wing_left () {
-	translate( [ 0, -18.966664289197727, 33.28152152646464 ])
-		rotate( [ 60.66577010971745, 0, 0 ])
-			   linear_extrude(height = 138.96079881522775) polygon(a_rake_faceWing, b_rake_faceWing);
+	translate( [ 0, -18.958966906863353, 33.27250957281965 ])
+		rotate( [ 60.55964241106459, 0, 0 ])
+			   linear_extrude(height = 138.513600108457) polygon(a_rake_faceWing, b_rake_faceWing);
 }
 
 module subpax_rake_wing_hollow_right () {
-	translate( [ 0, 18.966664289197727, 33.28152152646464 ])
-		rotate( [ -60.66577010971745, 0, 0 ])
-			   linear_extrude(height = 138.96079881522775) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
+	translate( [ 0, 18.958966906863353, 33.27250957281965 ])
+		rotate( [ -60.55964241106459, 0, 0 ])
+			   linear_extrude(height = 138.513600108457) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
 }
 
 module subpax_rake_wing_hollow_left () {
-	translate( [ 0, -18.966664289197727, 33.28152152646464 ])
-		rotate( [ 60.66577010971745, 0, 0 ])
-			   linear_extrude(height = 138.96079881522775) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
+	translate( [ 0, -18.958966906863353, 33.27250957281965 ])
+		rotate( [ 60.55964241106459, 0, 0 ])
+			   linear_extrude(height = 138.513600108457) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
 }
 
 module subpax_rake_door () {
 	translate( [ 0, 0, 0 ])
-		rotate( [ 90, 0, 90 ])
+		rotate( [ 90, 0, -90 ])
 			   linear_extrude(height = 50) polygon(a_rake_faceDoor, b_rake_faceDoor);
 }
 
 module subpax_rake_hand_0 () {
-	translate( [ 0, 143, 0 ])
+	translate( [ 0, 142.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 14) polygon(a_rake_faceHand, b_rake_faceHand);
+			   linear_extrude(height = 13) polygon(a_rake_faceHand, b_rake_faceHand);
 }
 
 module subpax_rake_hand_1 () {
-	translate( [ 0, 42, 0 ])
+	translate( [ 0, 41.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 14) polygon(a_rake_faceHand, b_rake_faceHand);
+			   linear_extrude(height = 13) polygon(a_rake_faceHand, b_rake_faceHand);
 }
 
 module subpax_rake_hand_2 () {
-	translate( [ 0, -28, 0 ])
+	translate( [ 0, -28.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 14) polygon(a_rake_faceHand, b_rake_faceHand);
+			   linear_extrude(height = 13) polygon(a_rake_faceHand, b_rake_faceHand);
 }
 
 module subpax_rake_hand_3 () {
-	translate( [ 0, -129, 0 ])
+	translate( [ 0, -129.5, 0 ])
 		rotate( [ 90, 0, 0 ])
-			   linear_extrude(height = 14) polygon(a_rake_faceHand, b_rake_faceHand);
+			   linear_extrude(height = 13) polygon(a_rake_faceHand, b_rake_faceHand);
 }
 
 module ipax_rake_plus () {
@@ -180,7 +190,8 @@ subpax_rake_wing_left();
 
 module ipax_rake_hollow () {
 	union () {
-		subpax_rake_beamHollow();
+		subpax_rake_coneHollow();
+subpax_rake_beamHollow();
 subpax_rake_wing_hollow_right();
 subpax_rake_wing_hollow_left();
 subpax_rake_door();

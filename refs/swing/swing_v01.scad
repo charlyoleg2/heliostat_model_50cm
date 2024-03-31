@@ -65,6 +65,12 @@ a_swing_faceFace = concat(ca_swing_faceFace_0, ca_swing_faceFace_1, ca_swing_fac
 b_swing_faceFace = [cb_swing_faceFace_0, cb_swing_faceFace_1, cb_swing_faceFace_2, cb_swing_faceFace_3, cb_swing_faceFace_4, cb_swing_faceFace_5, cb_swing_faceFace_6, cb_swing_faceFace_7, cb_swing_faceFace_8, cb_swing_faceFace_9, cb_swing_faceFace_10, cb_swing_faceFace_11, cb_swing_faceFace_12, cb_swing_faceFace_13, cb_swing_faceFace_14, cb_swing_faceFace_15, cb_swing_faceFace_16, cb_swing_faceFace_17, cb_swing_faceFace_18, cb_swing_faceFace_19];
 a_swing_faceTop = concat();
 b_swing_faceTop = [];
+ca_swing_faceButtress_0 = [ [ -30.0000, 10.0000 ],[ -27.0000, 10.0000 ],[ -25.1430, 9.6424 ],[ -23.5517, 8.6207 ],[ -6.8966, -7.2414 ],[ -3.7139, -9.2848 ],[ 0.0000, -10.0000 ],[ 3.7139, -9.2848 ],[ 6.8966, -7.2414 ],[ 23.5517, 8.6207 ],[ 25.1430, 9.6424 ],[ 27.0000, 10.0000 ],[ 30.0000, 10.0000 ],[ 30.0000, 13.0000 ],[ -30.0000, 13.0000 ],[ -30.0000, 10.0000 ] ];
+cb_swing_faceButtress_0 = [  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ];
+ca_swing_faceButtress_1 = [ [ 5.0000, 0.0000 ],[ 4.6194, 1.9134 ],[ 3.5355, 3.5355 ],[ 1.9134, 4.6194 ],[ 0.0000, 5.0000 ],[ -1.9134, 4.6194 ],[ -3.5355, 3.5355 ],[ -4.6194, 1.9134 ],[ -5.0000, 0.0000 ],[ -4.6194, -1.9134 ],[ -3.5355, -3.5355 ],[ -1.9134, -4.6194 ],[ -0.0000, -5.0000 ],[ 1.9134, -4.6194 ],[ 3.5355, -3.5355 ],[ 4.6194, -1.9134 ],[ 5.0000, 0.0000 ] ];
+cb_swing_faceButtress_1 = [  16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 ];
+a_swing_faceButtress = concat(ca_swing_faceButtress_0, ca_swing_faceButtress_1);
+b_swing_faceButtress = [cb_swing_faceButtress_0, cb_swing_faceButtress_1];
 ca_swing_faceTopWithRods_0 = [ [ -170.0000, -100.0000 ],[ -162.0000, -100.0000 ],[ -162.0000, 100.0000 ],[ -170.0000, 100.0000 ],[ -170.0000, -100.0000 ] ];
 cb_swing_faceTopWithRods_0 = [  0, 1, 2, 3, 4 ];
 ca_swing_faceTopWithRods_1 = [ [ 162.0000, -100.0000 ],[ 170.0000, -100.0000 ],[ 170.0000, 100.0000 ],[ 162.0000, 100.0000 ],[ 162.0000, -100.0000 ] ];
@@ -110,10 +116,80 @@ module subpax_swing_face () {
 			   linear_extrude(height = 200) polygon(a_swing_faceFace, b_swing_faceFace);
 }
 
+module subpax_swing_buttress_0 () {
+	translate( [ 0, 0, -170 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_1 () {
+	translate( [ 0, 0, 162 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_2 () {
+	translate( [ 0, 0, -151 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_3 () {
+	translate( [ 0, 0, -129 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_4 () {
+	translate( [ 0, 0, -50 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_5 () {
+	translate( [ 0, 0, -28 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_6 () {
+	translate( [ 0, 0, 20 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_7 () {
+	translate( [ 0, 0, 42 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_8 () {
+	translate( [ 0, 0, 121 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
+module subpax_swing_buttress_9 () {
+	translate( [ 0, 0, 143 ])
+		rotate( [ 0, 0, 0 ])
+			   linear_extrude(height = 8) polygon(a_swing_faceButtress, b_swing_faceButtress);
+}
+
 module pax_swing () {
 	union () {
 		subpax_swing_side();
 subpax_swing_face();
+subpax_swing_buttress_0();
+subpax_swing_buttress_1();
+subpax_swing_buttress_2();
+subpax_swing_buttress_3();
+subpax_swing_buttress_4();
+subpax_swing_buttress_5();
+subpax_swing_buttress_6();
+subpax_swing_buttress_7();
+subpax_swing_buttress_8();
+subpax_swing_buttress_9();
 	}
 }
 
