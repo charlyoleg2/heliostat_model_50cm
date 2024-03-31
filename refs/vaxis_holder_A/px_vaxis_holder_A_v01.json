@@ -1,10 +1,10 @@
 {
-  "lastModif": "20240331_154858",
+  "lastModif": "20240331_155837",
   "partName": "vaxis_holder",
   "pVal": {
     "PHD1": 64,
     "PHD2": 90,
-    "PHD5": 80,
+    "PHD5": 82,
     "PHN1": 6,
     "screw holes": 0,
     "PHD3": 2,
@@ -14,7 +14,7 @@
     "section": 0,
     "PHE1": 2,
     "PHH1": 5,
-    "PHA": 1,
+    "PHA": 1.5,
     "PHL1": 20,
     "PHE2": 2,
     "PHE3": 2
