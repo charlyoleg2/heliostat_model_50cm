@@ -1,5 +1,5 @@
 {
-  "lastModif": "20240331_151817",
+  "lastModif": "20240331_152133",
   "partName": "ring_guidance",
   "pVal": {
     "D1": 60,
@@ -8,15 +8,15 @@
     "leg details": 0,
     "D3": 2,
     "D4": 4,
-    "L1": 8,
-    "R5": 4,
+    "L1": 6,
+    "R5": 3,
     "inner": 0,
     "D6": 30,
     "N2": 8,
     "L2": 3,
     "D7": 4,
     "thickness": 0,
-    "T1": 10
+    "T1": 2
   },
   "comment": ""
 }
