@@ -1,5 +1,5 @@
 {
-  "lastModif": "20240331_162740",
+  "lastModif": "20240331_182205",
   "partName": "pole_static",
   "pVal": {
     "D1": 88,
@@ -28,7 +28,7 @@
     "PHD1B": 54,
     "PHN1AB": 6,
     "holder-B": 0,
-    "PHD5B": 66,
+    "PHD5B": 65,
     "PHR4B": 2,
     "PHD3B": 2,
     "PHL2B": 10,
