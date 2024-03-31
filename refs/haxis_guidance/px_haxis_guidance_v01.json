@@ -1,5 +1,5 @@
 {
-  "lastModif": "20240331_104729",
+  "lastModif": "20240331_113148",
   "partName": "haxis_guidance",
   "pVal": {
     "D5": 20,
@@ -15,8 +15,8 @@
     "SD1": 1,
     "SD2": 1,
     "SN1": 2,
-    "SL1": 6,
-    "SL2": 8,
+    "SL1": 8,
+    "SL2": 10,
     "Send": 0,
     "thickness": 0,
     "L4": 13
