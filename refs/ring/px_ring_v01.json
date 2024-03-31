@@ -1,19 +1,19 @@
 {
-  "lastModif": "20240330_213444",
+  "lastModif": "20240331_150448",
   "partName": "ring",
   "pVal": {
-    "D1": 400,
-    "D3": 800,
-    "H1": 20,
-    "H2": 100,
+    "D1": 22,
+    "D3": 50,
+    "H1": 2,
+    "H2": 10,
     "ring holes": 0,
     "N2": 24,
-    "D2": 40,
-    "L1": 45,
+    "D2": 2,
+    "L1": 2,
     "ring fake teeth": 0,
-    "N1": 100,
-    "L2": 30,
-    "L3": 30
+    "N1": 30,
+    "L2": 3,
+    "L3": 4
   },
-  "comment": "Written by geom_cli"
+  "comment": ""
 }
