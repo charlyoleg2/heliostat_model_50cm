@@ -1,23 +1,23 @@
 {
-  "lastModif": "20240330_213443",
+  "lastModif": "20240331_154858",
   "partName": "vaxis_holder",
   "pVal": {
-    "PHD1": 700,
-    "PHD2": 900,
-    "PHD5": 800,
+    "PHD1": 64,
+    "PHD2": 90,
+    "PHD5": 80,
     "PHN1": 6,
     "screw holes": 0,
-    "PHD3": 40,
-    "PHR4": 40,
-    "PHL2": 120,
-    "PHR6": 20,
+    "PHD3": 2,
+    "PHR4": 2,
+    "PHL2": 10,
+    "PHR6": 5,
     "section": 0,
-    "PHE1": 10,
-    "PHH1": 50,
-    "PHA": 5,
-    "PHL1": 300,
-    "PHE2": 10,
-    "PHE3": 10
+    "PHE1": 2,
+    "PHH1": 5,
+    "PHA": 1,
+    "PHL1": 20,
+    "PHE2": 2,
+    "PHE3": 2
   },
-  "comment": "Written by geom_cli"
+  "comment": ""
 }
