@@ -1,25 +1,25 @@
 {
-  "lastModif": "20240330_213445",
+  "lastModif": "20240331_104729",
   "partName": "haxis_guidance",
   "pVal": {
-    "D5": 600,
-    "D8": 1000,
+    "D5": 20,
+    "D8": 50,
     "outer details": 0,
     "E5": 1,
-    "E8": 20,
-    "L5": 20,
-    "R9": 20,
+    "E8": 2,
+    "L5": 2,
+    "R9": 5,
     "inner spring": 0,
-    "SA1": 0,
-    "SE1": 2,
-    "SD1": 20,
-    "SD2": 10,
-    "SN1": 7,
-    "SL1": 60,
-    "SL2": 100,
+    "SA1": 23,
+    "SE1": 0.9,
+    "SD1": 1,
+    "SD2": 1,
+    "SN1": 2,
+    "SL1": 6,
+    "SL2": 8,
     "Send": 0,
     "thickness": 0,
-    "L4": 400
+    "L4": 13
   },
-  "comment": "Written by geom_cli"
+  "comment": ""
 }
