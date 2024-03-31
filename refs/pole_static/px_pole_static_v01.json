@@ -1,10 +1,10 @@
 {
-  "lastModif": "20240331_162226",
+  "lastModif": "20240331_162740",
   "partName": "pole_static",
   "pVal": {
     "D1": 88,
     "D2": 70,
-    "D3": 82,
+    "D3": 76,
     "H1": 80,
     "H2": 220,
     "thickness": 0,
