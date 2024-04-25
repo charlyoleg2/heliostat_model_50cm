@@ -5,8 +5,9 @@ heliostat\_model\_50cm
 Presentation
 ------------
 
-This repo stores the parameters and the STL-files of a model of heliostat with an height of around 50cm. The model shall be made with a 3D-printer [Voron](https://www.vorondesign.com/).
-This repo uses the javascript packages [designix-cli](https://www.npmjs.com/package/designix-cli) and [designix-uis](https://www.npmjs.com/package/designix-uis).
+This repo is a maker-repository. It stores the parameters and the STL-files of a model of heliostat with an height of around 50cm.
+The model shall be made with a 3D-printer [Voron](https://www.vorondesign.com/).
+This repo uses the javascript packages [designix-cli](https://www.npmjs.com/package/designix-cli) and [designix-uis](https://www.npmjs.com/package/designix-uis) of the design-library [designix](https://charlyoleg2.github.io/parametrix/).
 
 
 Requirements
@@ -24,6 +25,17 @@ For Ubuntu users, *OpenSCAD* is available on [snapcraft](https://snapcraft.io/op
 
 ```bash
 sudo snap install openscad
+```
+
+Upgrade
+-------
+
+For working with the latest *desi78* version:
+
+```bash
+npm outdated
+npm update --save
+git commit -am 'npm update --save'
 ```
 
 
