@@ -1,0 +1,3 @@
+ring simTime: 0
+ring-height: 12.00 mm
+ring drawn successfully!

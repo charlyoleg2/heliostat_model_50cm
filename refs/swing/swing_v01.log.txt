@@ -1,0 +1,7 @@
+swing simTime: 0
+swing size: L1 340.00 x L2 320.00 mm
+rake-L4: 14.00 mm (compare with rake)
+rake-L5: 120.00 mm (compare with rake)
+rake-L6: 60.00 mm (compare with rake)
+rake-beamL: (4*L4+L5+2*L6-2*H1) 296.00 mm (compare with rake)
+heliostat-swing drawn successfully!

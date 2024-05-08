@@ -1,0 +1,32 @@
+pole_static simTime: 0
+pole-height: 300.00 mm
+cone-half-angle: 2.34 degree
+holder position: A: 90.00  B1: 130.00  B2: 290.00 mm
+[vaxis_holderB2]: vaxis_holderB2 simTime: 0
+[vaxis_holderB2]: vaxis_holder's height: 20.00 mm
+[vaxis_holderB2]: vaxis_holder outerD1: 71.64 mm
+[vaxis_holderB2]: vaxis_holder outerD2: 70.00 mm
+[vaxis_holderB2]: vaxis_holder innerD: 50.00 mm
+[vaxis_holderB2]: vaxis_holder D2-next: 66.81 mm
+[vaxis_holderB2]: petal angle: 17.70 degree
+[vaxis_holderB2]: hollow angle: 42.30 degree
+[vaxis_holderB2]: vaxis_holder drawn successfully!
+[vaxis_holderB1]: vaxis_holderB1 simTime: 0
+[vaxis_holderB1]: vaxis_holder's height: 20.00 mm
+[vaxis_holderB1]: vaxis_holder outerD1: 84.73 mm
+[vaxis_holderB1]: vaxis_holder outerD2: 83.09 mm
+[vaxis_holderB1]: vaxis_holder innerD: 50.00 mm
+[vaxis_holderB1]: vaxis_holder D2-next: 79.91 mm
+[vaxis_holderB1]: petal angle: 15.12 degree
+[vaxis_holderB1]: hollow angle: 44.88 degree
+[vaxis_holderB1]: vaxis_holder drawn successfully!
+[vaxis_holderA]: vaxis_holderA simTime: 0
+[vaxis_holderA]: vaxis_holder's height: 20.00 mm
+[vaxis_holderA]: vaxis_holder outerD1: 88.00 mm
+[vaxis_holderA]: vaxis_holder outerD2: 86.36 mm
+[vaxis_holderA]: vaxis_holder innerD: 60.00 mm
+[vaxis_holderA]: vaxis_holder D2-next: 83.18 mm
+[vaxis_holderA]: petal angle: 14.36 degree
+[vaxis_holderA]: hollow angle: 45.64 degree
+[vaxis_holderA]: vaxis_holder drawn successfully!
+pole_static drawn successfully!

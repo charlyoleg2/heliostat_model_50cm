@@ -1,0 +1,31 @@
+heliostat simTime: 0
+heliostat-height: 449.00, diameter 88.00 m
+heliostat-swing-length: 340.00, width 200.00 m
+swing position angle: 0.00 degree
+[pole_static]: pole_static simTime: 0
+[pole_static]: pole-height: 300.00 mm
+[pole_static]: cone-half-angle: 2.34 degree
+[pole_static]: holder position: A: 280.00  B1: -4900.00  B2: 100.00 mm
+[pole_static]: pole_static drawn successfully!
+[rake]: rake simTime: 0
+[rake]: rake-L4: 14.00 mm (compare with swing)
+[rake]: rake-L5: 56.00 mm (compare with swing)
+[rake]: rake-L6: 87.00 mm (compare with swing)
+[rake]: rake-beamL (4*L4+L5+2*L6): 286.00 mm (compare with swing)
+[rake]: cone-height: 130.00 mm
+[rake]: cone-height total: 170.00 mm
+[rake]: cone-angle: 7.13 degree
+[rake]: wing-angle: 59.41 degree
+[rake]: heliostat-rake drawn successfully!
+[spider]: spider simTime: 0
+[spider]: spide leg number: 6
+[spider]: spide position angle: 0.00 degree
+[spider]: heliostat-spider drawn successfully!
+[swing]: swing simTime: 0
+[swing]: swing size: L1 340.00 x L2 200.00 mm
+[swing]: rake-L4: 14.00 mm (compare with rake)
+[swing]: rake-L5: 56.00 mm (compare with rake)
+[swing]: rake-L6: 87.00 mm (compare with rake)
+[swing]: rake-beamL: (4*L4+L5+2*L6-2*H1) 286.00 mm (compare with rake)
+[swing]: heliostat-swing drawn successfully!
+heliostat-overview drawn successfully!

@@ -1,0 +1,10 @@
+rake simTime: 0
+rake-L4: 13.00 mm (compare with swing)
+rake-L5: 57.00 mm (compare with swing)
+rake-L6: 88.00 mm (compare with swing)
+rake-beamL (4*L4+L5+2*L6): 285.00 mm (compare with swing)
+cone-height: 130.00 mm
+cone-height total: 170.00 mm
+cone-angle: 4.76 degree
+wing-angle: 60.56 degree
+heliostat-rake drawn successfully!

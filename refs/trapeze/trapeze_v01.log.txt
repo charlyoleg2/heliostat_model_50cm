@@ -1,0 +1,5 @@
+trapeze simTime: 0
+rod-slope:  length: 31.37 mm,  angle: 44.53 degree
+rod-xy-angle: 63.43 degree
+rod-footprint-length: 7.13 mm
+trapeze drawn successfully!

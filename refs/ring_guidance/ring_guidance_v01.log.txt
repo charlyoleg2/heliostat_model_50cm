@@ -1,0 +1,3 @@
+ring_guidance simTime: 0
+ring_guidance: Dmax 68.00 mm
+ring_guidance drawn successfully!

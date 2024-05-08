@@ -1,0 +1,4 @@
+spider simTime: 0
+spide leg number: 6
+spide position angle: 0.00 degree
+heliostat-spider drawn successfully!

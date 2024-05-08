@@ -1,0 +1,4 @@
+vaxis_guidance simTime: 0
+vaxis_guidance: Dmax 58.00 mm
+info309: spring height: 3.60 length: 10.80
+vaxis_guidance drawn successfully!

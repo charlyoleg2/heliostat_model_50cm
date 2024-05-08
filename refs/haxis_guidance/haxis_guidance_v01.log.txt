@@ -1,0 +1,4 @@
+haxis_guidance simTime: 0
+haxis_guidance: Dinner 22.00 mm
+info309: spring height: 10.80 length: 7.60
+haxis_guidance drawn successfully!

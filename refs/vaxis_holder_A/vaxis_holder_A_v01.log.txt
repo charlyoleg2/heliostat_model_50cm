@@ -1,0 +1,9 @@
+vaxis_holder simTime: 0
+vaxis_holder's height: 19.99 mm
+vaxis_holder outerD1: 90.52 mm
+vaxis_holder outerD2: 89.48 mm
+vaxis_holder innerD: 60.00 mm
+vaxis_holder D2-next: 86.00 mm
+petal angle: 14.01 degree
+hollow angle: 45.99 degree
+vaxis_holder drawn successfully!

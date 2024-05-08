@@ -1,0 +1,4 @@
+rod simTime: 0
+rod-length: 346.00 mm
+space-length: 52.67 mm
+heliostat-rod drawn successfully!

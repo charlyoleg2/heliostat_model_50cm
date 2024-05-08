@@ -1,0 +1,5 @@
+base simTime: 0
+base-height: 60.00 mm
+base-external-diameter: 98.00 mm
+inter-hollow: 7.28 mm
+heliostat-base drawn successfully!

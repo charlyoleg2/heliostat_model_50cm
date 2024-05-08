@@ -1,0 +1,15 @@
+rake_stopper simTime: 0
+cone-height: 200.00 mm
+cone-height total: 220.00 mm
+[rake]: rake simTime: 0
+[rake]: rake-L4: 13.00 mm (compare with swing)
+[rake]: rake-L5: 121.00 mm (compare with swing)
+[rake]: rake-L6: 60.00 mm (compare with swing)
+[rake]: rake-beamL (4*L4+L5+2*L6): 293.00 mm (compare with swing)
+[rake]: cone-height: 200.00 mm
+[rake]: cone-height total: 220.00 mm
+[rake]: cone-angle: 4.76 degree
+[rake]: wing-angle: 35.68 degree
+[rake]: heliostat-rake drawn successfully!
+stopper-rod: L 237.44 mm, A 48.93 degree
+heliostat-rake drawn successfully!
