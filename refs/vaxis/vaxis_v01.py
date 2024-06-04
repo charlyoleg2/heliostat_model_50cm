@@ -20,7 +20,7 @@ def ctr_face_vaxis_faceCut_Fa0_Ctr0():
 	P003 = App.Vector(15.0000, 0.0000, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(17.0000, 0.0000, 0)
-	S003 = Part.LineSegment(P003, P004)
+	S003 = Part.LineSegment(P003, P000)
 	aShape = Part.Shape([S000, S001, S002, S003])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -261,30 +261,30 @@ def vaxis_faceBottom():
 def fex_subpax_vaxis_pole():
 	FIG = vaxis_faceCut()
 	VEX = FIG.revolve(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 360).rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_vaxis_pole = fex_subpax_vaxis_pole()
 
 def fex_subpax_vaxis_bottom():
 	FIG = vaxis_faceBottom()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_vaxis_bottom = fex_subpax_vaxis_bottom()
 
 def fex_subpax_vaxis_top():
 	FIG = vaxis_faceBottom()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 196))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 196.0000))
 	return VFP
 subpax_vaxis_top = fex_subpax_vaxis_top()
 

@@ -28,7 +28,7 @@ def ctr_face_base_faceCut_Fa0_Ctr0():
 	P007 = App.Vector(40.0000, 0.0000, 0)
 	S006 = Part.LineSegment(P006, P007)
 	P008 = App.Vector(49.0000, 0.0000, 0)
-	S007 = Part.LineSegment(P007, P008)
+	S007 = Part.LineSegment(P007, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -341,7 +341,7 @@ def ctr_face_base_faceHollow_Fa0_Ctr0():
 	S002 = Part.LineSegment(P003, P004)
 	P005 = App.Vector(-0.0000, 6.0000, 0)
 	P006 = App.Vector(5.0000, 11.0000, 0)
-	S003 = Part.Arc(P004, P005, P006)
+	S003 = Part.Arc(P004, P005, P000)
 	aShape = Part.Shape([S000, S001, S002, S003])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -363,180 +363,180 @@ def base_faceHollow():
 def fex_subpax_base_cut():
 	FIG = base_faceCut()
 	VEX = FIG.revolve(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 360).rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(1.5707963267948966, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(1.5708, 0.0000, 0.0000))
 	return VFP
 subpax_base_cut = fex_subpax_base_cut()
 
 def fex_subpax_base_top():
 	FIG = base_faceTop()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 58))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 58.0000))
 	return VFP
 subpax_base_top = fex_subpax_base_top()
 
 def fex_subpax_base_hollow_0():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_0 = fex_subpax_base_hollow_0()
 
 def fex_subpax_base_hollow_1():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 22.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 22.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_1 = fex_subpax_base_hollow_1()
 
 def fex_subpax_base_hollow_2():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 45)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 45.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_2 = fex_subpax_base_hollow_2()
 
 def fex_subpax_base_hollow_3():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 67.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 67.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_3 = fex_subpax_base_hollow_3()
 
 def fex_subpax_base_hollow_4():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 90)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 90.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_4 = fex_subpax_base_hollow_4()
 
 def fex_subpax_base_hollow_5():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 112.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 112.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_5 = fex_subpax_base_hollow_5()
 
 def fex_subpax_base_hollow_6():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 135)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 135.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_6 = fex_subpax_base_hollow_6()
 
 def fex_subpax_base_hollow_7():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 157.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 157.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_7 = fex_subpax_base_hollow_7()
 
 def fex_subpax_base_hollow_8():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 180)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 180.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_8 = fex_subpax_base_hollow_8()
 
 def fex_subpax_base_hollow_9():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 202.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 202.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_9 = fex_subpax_base_hollow_9()
 
 def fex_subpax_base_hollow_10():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 225)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 225.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_10 = fex_subpax_base_hollow_10()
 
 def fex_subpax_base_hollow_11():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 247.49999999999997)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 247.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_11 = fex_subpax_base_hollow_11()
 
 def fex_subpax_base_hollow_12():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 270)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 270.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_12 = fex_subpax_base_hollow_12()
 
 def fex_subpax_base_hollow_13():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 292.5)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 292.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_13 = fex_subpax_base_hollow_13()
 
 def fex_subpax_base_hollow_14():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 315)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 315.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_14 = fex_subpax_base_hollow_14()
 
 def fex_subpax_base_hollow_15():
 	FIG = base_faceHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 51))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 337.49999999999994)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 337.5000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_base_hollow_15 = fex_subpax_base_hollow_15()
 

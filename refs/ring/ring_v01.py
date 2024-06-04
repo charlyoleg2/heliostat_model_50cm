@@ -358,7 +358,7 @@ def ctr_face_ring_faceRingTeeth_Fa0_Ctr1():
 	P059 = App.Vector(20.8850, -2.1951, 0)
 	S058 = Part.LineSegment(P058, P059)
 	P060 = App.Vector(24.0000, -0.0000, 0)
-	S059 = Part.LineSegment(P059, P060)
+	S059 = Part.LineSegment(P059, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007, S008, S009, S010, S011, S012, S013, S014, S015, S016, S017, S018, S019, S020, S021, S022, S023, S024, S025, S026, S027, S028, S029, S030, S031, S032, S033, S034, S035, S036, S037, S038, S039, S040, S041, S042, S043, S044, S045, S046, S047, S048, S049, S050, S051, S052, S053, S054, S055, S056, S057, S058, S059])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -391,7 +391,7 @@ def ctr_face_ring_faceSection_Fa0_Ctr0():
 	P005 = App.Vector(28.0000, -12.0000, 0)
 	S004 = Part.LineSegment(P004, P005)
 	P006 = App.Vector(28.0000, 0.0000, 0)
-	S005 = Part.LineSegment(P005, P006)
+	S005 = Part.LineSegment(P005, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -413,20 +413,20 @@ def ring_faceSection():
 def fex_subpax_ring_base():
 	FIG = ring_faceRingBase()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_ring_base = fex_subpax_ring_base()
 
 def fex_subpax_ring_teeth():
 	FIG = ring_faceRingTeeth()
 	VEX = FIG.extrude(App.Vector(0, 0, 12))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_ring_teeth = fex_subpax_ring_teeth()
 

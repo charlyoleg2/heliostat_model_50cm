@@ -32,7 +32,7 @@ def ctr_face_trapeze_faceFrame_Fa0_Ctr0():
 	S006 = Part.LineSegment(P009, P010)
 	P011 = App.Vector(24.4142, 39.4142, 0)
 	P012 = App.Vector(23.0000, 40.0000, 0)
-	S007 = Part.Arc(P010, P011, P012)
+	S007 = Part.Arc(P010, P011, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -60,7 +60,7 @@ def ctr_face_trapeze_faceFrame_Fa0_Ctr1():
 	S006 = Part.LineSegment(P009, P010)
 	P011 = App.Vector(18.2426, 33.2426, 0)
 	P012 = App.Vector(14.0000, 35.0000, 0)
-	S007 = Part.Arc(P010, P011, P012)
+	S007 = Part.Arc(P010, P011, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -277,7 +277,7 @@ def ctr_face_trapeze_facePlate_Fa0_Ctr0():
 	S006 = Part.LineSegment(P009, P010)
 	P011 = App.Vector(14.4142, 19.4142, 0)
 	P012 = App.Vector(13.0000, 20.0000, 0)
-	S007 = Part.Arc(P010, P011, P012)
+	S007 = Part.Arc(P010, P011, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -407,7 +407,7 @@ def ctr_face_trapeze_faceCutRod_Fa0_Ctr0():
 	P003 = App.Vector(133.5650, -133.5650, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(133.5650, 133.5650, 0)
-	S003 = Part.LineSegment(P003, P004)
+	S003 = Part.LineSegment(P003, P000)
 	aShape = Part.Shape([S000, S001, S002, S003])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -429,120 +429,120 @@ def trapeze_faceCutRod():
 def fex_subpax_trapeze_frame():
 	FIG = trapeze_faceFrame()
 	VEX = FIG.extrude(App.Vector(0, 0, 1))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 24))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 24.0000))
 	return VFP
 subpax_trapeze_frame = fex_subpax_trapeze_frame()
 
 def fex_subpax_trapeze_plate():
 	FIG = trapeze_facePlate()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_trapeze_plate = fex_subpax_trapeze_plate()
 
 def fex_subpax_trapeze_rod1():
 	FIG = trapeze_faceRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 63.434948822922)
-	VFP = VR3.translate(App.Vector(11.199987307122505, 12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 63.4349)
+	VFP = VR3.translate(App.Vector(11.2000, 12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rod1 = fex_subpax_trapeze_rod1()
 
 def fex_subpax_trapeze_rod2():
 	FIG = trapeze_faceRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 116.56505117707799)
-	VFP = VR3.translate(App.Vector(-11.199987307122505, 12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 116.5651)
+	VFP = VR3.translate(App.Vector(-11.2000, 12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rod2 = fex_subpax_trapeze_rod2()
 
 def fex_subpax_trapeze_rod3():
 	FIG = trapeze_faceRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 243.434948822922)
-	VFP = VR3.translate(App.Vector(-11.199987307122505, -12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 243.4349)
+	VFP = VR3.translate(App.Vector(-11.2000, -12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rod3 = fex_subpax_trapeze_rod3()
 
 def fex_subpax_trapeze_rod4():
 	FIG = trapeze_faceRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -63.434948822922)
-	VFP = VR3.translate(App.Vector(11.199987307122505, -12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -63.4349)
+	VFP = VR3.translate(App.Vector(11.2000, -12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rod4 = fex_subpax_trapeze_rod4()
 
 def fex_subpax_trapeze_rodH1():
 	FIG = trapeze_faceRodHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 63.434948822922)
-	VFP = VR3.translate(App.Vector(11.199987307122505, 12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 63.4349)
+	VFP = VR3.translate(App.Vector(11.2000, 12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rodH1 = fex_subpax_trapeze_rodH1()
 
 def fex_subpax_trapeze_rodH2():
 	FIG = trapeze_faceRodHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 116.56505117707799)
-	VFP = VR3.translate(App.Vector(-11.199987307122505, 12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 116.5651)
+	VFP = VR3.translate(App.Vector(-11.2000, 12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rodH2 = fex_subpax_trapeze_rodH2()
 
 def fex_subpax_trapeze_rodH3():
 	FIG = trapeze_faceRodHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 243.434948822922)
-	VFP = VR3.translate(App.Vector(-11.199987307122505, -12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 243.4349)
+	VFP = VR3.translate(App.Vector(-11.2000, -12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rodH3 = fex_subpax_trapeze_rodH3()
 
 def fex_subpax_trapeze_rodH4():
 	FIG = trapeze_faceRodHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 60.00082232516408))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.46583987463105)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -63.434948822922)
-	VFP = VR3.translate(App.Vector(11.199987307122505, -12.985761051871918, -1.564162178201257))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 45.4658)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -63.4349)
+	VFP = VR3.translate(App.Vector(11.2000, -12.9858, -1.5642))
 	return VFP
 subpax_trapeze_rodH4 = fex_subpax_trapeze_rodH4()
 
 def fex_subpax_trapeze_cut1():
 	FIG = trapeze_faceCutRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 133.56498450336534))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, -133.56498450336534))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, -133.5650))
 	return VFP
 subpax_trapeze_cut1 = fex_subpax_trapeze_cut1()
 
 def fex_subpax_trapeze_cut2():
 	FIG = trapeze_faceCutRod()
 	VEX = FIG.extrude(App.Vector(0, 0, 133.56498450336534))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 25))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 25.0000))
 	return VFP
 subpax_trapeze_cut2 = fex_subpax_trapeze_cut2()
 

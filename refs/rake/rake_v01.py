@@ -24,7 +24,7 @@ def ctr_face_rake_faceCone_Fa0_Ctr0():
 	P005 = App.Vector(23.0000, 0.0000, 0)
 	S004 = Part.LineSegment(P004, P005)
 	P006 = App.Vector(25.0000, 0.0000, 0)
-	S005 = Part.LineSegment(P005, P006)
+	S005 = Part.LineSegment(P005, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -54,7 +54,7 @@ def ctr_face_rake_faceConeHollow_Fa0_Ctr0():
 	P004 = App.Vector(0.0000, 4.0000, 0)
 	S003 = Part.LineSegment(P003, P004)
 	P005 = App.Vector(0.0000, 95.0000, 0)
-	S004 = Part.LineSegment(P004, P005)
+	S004 = Part.LineSegment(P004, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -353,7 +353,7 @@ def ctr_face_rake_faceHand_Fa0_Ctr0():
 	S004 = Part.LineSegment(P005, P006)
 	P007 = App.Vector(0.0000, 125.0000, 0)
 	P008 = App.Vector(12.9904, 117.5000, 0)
-	S005 = Part.Arc(P006, P007, P008)
+	S005 = Part.Arc(P006, P007, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -439,7 +439,7 @@ def ctr_face_rake_faceDoor_Fa0_Ctr0():
 	S006 = Part.LineSegment(P009, P010)
 	P011 = App.Vector(-11.6227, 13.3072, 0)
 	P012 = App.Vector(-9.7830, 12.5000, 0)
-	S007 = Part.Arc(P010, P011, P012)
+	S007 = Part.Arc(P010, P011, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -461,140 +461,140 @@ def rake_faceDoor():
 def fex_subpax_rake_cone():
 	FIG = rake_faceCone()
 	VEX = FIG.revolve(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 360).rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_rake_cone = fex_subpax_rake_cone()
 
 def fex_subpax_rake_coneHollow():
 	FIG = rake_faceConeHollow()
 	VEX = FIG.revolve(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 360).rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_rake_coneHollow = fex_subpax_rake_coneHollow()
 
 def fex_subpax_rake_beam():
 	FIG = rake_faceBeam()
 	VEX = FIG.extrude(App.Vector(0, 0, 285))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 142.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 142.5000, 0.0000))
 	return VFP
 subpax_rake_beam = fex_subpax_rake_beam()
 
 def fex_subpax_rake_beamHollow():
 	FIG = rake_faceBeamHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 285))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 142.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 142.5000, 0.0000))
 	return VFP
 subpax_rake_beamHollow = fex_subpax_rake_beamHollow()
 
 def fex_subpax_rake_disc():
 	FIG = rake_faceDisc()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 2))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 2.0000))
 	return VFP
 subpax_rake_disc = fex_subpax_rake_disc()
 
 def fex_subpax_rake_wing_right():
 	FIG = rake_faceWing()
 	VEX = FIG.extrude(App.Vector(0, 0, 138.513600108457))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), -60.55964241106459)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 18.958966906863353, 33.27250957281965))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), -60.5596)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 18.9590, 33.2725))
 	return VFP
 subpax_rake_wing_right = fex_subpax_rake_wing_right()
 
 def fex_subpax_rake_wing_left():
 	FIG = rake_faceWing()
 	VEX = FIG.extrude(App.Vector(0, 0, 138.513600108457))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 60.55964241106459)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, -18.958966906863353, 33.27250957281965))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 60.5596)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, -18.9590, 33.2725))
 	return VFP
 subpax_rake_wing_left = fex_subpax_rake_wing_left()
 
 def fex_subpax_rake_wing_hollow_right():
 	FIG = rake_faceWingHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 138.513600108457))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), -60.55964241106459)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 18.958966906863353, 33.27250957281965))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), -60.5596)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 18.9590, 33.2725))
 	return VFP
 subpax_rake_wing_hollow_right = fex_subpax_rake_wing_hollow_right()
 
 def fex_subpax_rake_wing_hollow_left():
 	FIG = rake_faceWingHollow()
 	VEX = FIG.extrude(App.Vector(0, 0, 138.513600108457))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 60.55964241106459)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, -18.958966906863353, 33.27250957281965))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 60.5596)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, -18.9590, 33.2725))
 	return VFP
 subpax_rake_wing_hollow_left = fex_subpax_rake_wing_hollow_left()
 
 def fex_subpax_rake_door():
 	FIG = rake_faceDoor()
 	VEX = FIG.extrude(App.Vector(0, 0, 50))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -90)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -90.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_rake_door = fex_subpax_rake_door()
 
 def fex_subpax_rake_hand_0():
 	FIG = rake_faceHand()
 	VEX = FIG.extrude(App.Vector(0, 0, 13))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 142.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 142.5000, 0.0000))
 	return VFP
 subpax_rake_hand_0 = fex_subpax_rake_hand_0()
 
 def fex_subpax_rake_hand_1():
 	FIG = rake_faceHand()
 	VEX = FIG.extrude(App.Vector(0, 0, 13))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 41.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 41.5000, 0.0000))
 	return VFP
 subpax_rake_hand_1 = fex_subpax_rake_hand_1()
 
 def fex_subpax_rake_hand_2():
 	FIG = rake_faceHand()
 	VEX = FIG.extrude(App.Vector(0, 0, 13))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, -28.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, -28.5000, 0.0000))
 	return VFP
 subpax_rake_hand_2 = fex_subpax_rake_hand_2()
 
 def fex_subpax_rake_hand_3():
 	FIG = rake_faceHand()
 	VEX = FIG.extrude(App.Vector(0, 0, 13))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, -129.5, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, -129.5000, 0.0000))
 	return VFP
 subpax_rake_hand_3 = fex_subpax_rake_hand_3()
 

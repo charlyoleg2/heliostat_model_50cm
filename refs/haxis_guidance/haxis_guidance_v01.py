@@ -132,7 +132,7 @@ def ctr_face_haxis_guidance_faceProfile_Fa0_Ctr0():
 	P071 = App.Vector(0.0000, 25.0000, 0)
 	S046 = Part.Arc(P069, P070, P071)
 	P072 = App.Vector(0.0000, 11.0000, 0)
-	S047 = Part.LineSegment(P071, P072)
+	S047 = Part.LineSegment(P071, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007, S008, S009, S010, S011, S012, S013, S014, S015, S016, S017, S018, S019, S020, S021, S022, S023, S024, S025, S026, S027, S028, S029, S030, S031, S032, S033, S034, S035, S036, S037, S038, S039, S040, S041, S042, S043, S044, S045, S046, S047])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -160,7 +160,7 @@ def ctr_face_haxis_guidance_faceSide_Fa0_Ctr0():
 	P003 = App.Vector(0.0000, 25.0000, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(0.0000, -12.5000, 0)
-	S003 = Part.LineSegment(P003, P004)
+	S003 = Part.LineSegment(P003, P000)
 	aShape = Part.Shape([S000, S001, S002, S003])
 	aWire = Part.Wire(aShape.Edges)
 	subFace = Part.Face(aWire)
@@ -182,10 +182,10 @@ def haxis_guidance_faceSide():
 def fex_subpax_haxis_guidance_profile():
 	FIG = haxis_guidance_faceProfile()
 	VEX = FIG.extrude(App.Vector(0, 0, 13))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0)
-	VFP = VR3.translate(App.Vector(0, 0, 0))
+	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
+	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
+	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
+	VFP = VR3.translate(App.Vector(0.0000, 0.0000, 0.0000))
 	return VFP
 subpax_haxis_guidance_profile = fex_subpax_haxis_guidance_profile()
 
