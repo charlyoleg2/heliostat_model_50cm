@@ -1631,9 +1631,37 @@ def fex_subpax_rake_hand_3():
 	return VFP
 subpax_rake_hand_3 = fex_subpax_rake_hand_3()
 
-ipax_rake_plus = subpax_rake_cone.fuse([subpax_rake_beam, subpax_rake_disc, subpax_rake_hand_0, subpax_rake_hand_1, subpax_rake_hand_2, subpax_rake_hand_3, subpax_rake_wing_right, subpax_rake_wing_left])
-ipax_rake_hollow = subpax_rake_coneHollow.fuse([subpax_rake_beamHollow, subpax_rake_wing_hollow_right, subpax_rake_wing_hollow_left, subpax_rake_door])
-pax_rake = ipax_rake_plus.cut([ipax_rake_hollow])
+def fvol_ipax_rake_plus():
+	V000 = subpax_rake_cone
+	V001 = V000.fuse(subpax_rake_beam)
+	V002 = V001.fuse(subpax_rake_disc)
+	V003 = V002.fuse(subpax_rake_hand_0)
+	V004 = V003.fuse(subpax_rake_hand_1)
+	V005 = V004.fuse(subpax_rake_hand_2)
+	V006 = V005.fuse(subpax_rake_hand_3)
+	V007 = V006.fuse(subpax_rake_wing_right)
+	V008 = V007.fuse(subpax_rake_wing_left)
+	VFC = V008.removeSplitter()
+	return VFC
+ipax_rake_plus = fvol_ipax_rake_plus()
+
+def fvol_ipax_rake_hollow():
+	V000 = subpax_rake_coneHollow
+	V001 = V000.fuse(subpax_rake_beamHollow)
+	V002 = V001.fuse(subpax_rake_wing_hollow_right)
+	V003 = V002.fuse(subpax_rake_wing_hollow_left)
+	V004 = V003.fuse(subpax_rake_door)
+	VFC = V004.removeSplitter()
+	return VFC
+ipax_rake_hollow = fvol_ipax_rake_hollow()
+
+def fvol_pax_rake():
+	V000 = ipax_rake_plus
+	V001 = V000.cut(ipax_rake_hollow)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_rake = fvol_pax_rake()
+
 def finh_inpax_rake_stopper_rake():
 	IVR1 = pax_rake.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
 	IVR2 = IVR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1758,10 +1786,42 @@ def fex_subpax_rake_stopper_Hi2SH():
 	return VFP
 subpax_rake_stopper_Hi2SH = fex_subpax_rake_stopper_Hi2SH()
 
-ipax_rake_stopper_plus = subpax_rake_stopper_stpSide.fuse([subpax_rake_stopper_stpFaceT, subpax_rake_stopper_stpFaceB, subpax_rake_stopper_lowSH, subpax_rake_stopper_Hi1SH1, subpax_rake_stopper_Hi1SH2, subpax_rake_stopper_Hi2SH])
-ipax_rake_stopper_hollow = inpax_rake_stopper_coneHollow.fuse([inpax_rake_stopper_beamHollow, subpax_rake_stopper_stpSideH, subpax_rake_stopper_stpFaceTH, subpax_rake_stopper_stpFaceBH])
-ipax_rake_stopper_stopper = ipax_rake_stopper_plus.cut([ipax_rake_stopper_hollow])
-pax_rake_stopper = inpax_rake_stopper_rake.fuse([ipax_rake_stopper_stopper])
+def fvol_ipax_rake_stopper_plus():
+	V000 = subpax_rake_stopper_stpSide
+	V001 = V000.fuse(subpax_rake_stopper_stpFaceT)
+	V002 = V001.fuse(subpax_rake_stopper_stpFaceB)
+	V003 = V002.fuse(subpax_rake_stopper_lowSH)
+	V004 = V003.fuse(subpax_rake_stopper_Hi1SH1)
+	V005 = V004.fuse(subpax_rake_stopper_Hi1SH2)
+	V006 = V005.fuse(subpax_rake_stopper_Hi2SH)
+	VFC = V006.removeSplitter()
+	return VFC
+ipax_rake_stopper_plus = fvol_ipax_rake_stopper_plus()
+
+def fvol_ipax_rake_stopper_hollow():
+	V000 = inpax_rake_stopper_coneHollow
+	V001 = V000.fuse(inpax_rake_stopper_beamHollow)
+	V002 = V001.fuse(subpax_rake_stopper_stpSideH)
+	V003 = V002.fuse(subpax_rake_stopper_stpFaceTH)
+	V004 = V003.fuse(subpax_rake_stopper_stpFaceBH)
+	VFC = V004.removeSplitter()
+	return VFC
+ipax_rake_stopper_hollow = fvol_ipax_rake_stopper_hollow()
+
+def fvol_ipax_rake_stopper_stopper():
+	V000 = ipax_rake_stopper_plus
+	V001 = V000.cut(ipax_rake_stopper_hollow)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_rake_stopper_stopper = fvol_ipax_rake_stopper_stopper()
+
+def fvol_pax_rake_stopper():
+	V000 = inpax_rake_stopper_rake
+	V001 = V000.fuse(ipax_rake_stopper_stopper)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_rake_stopper = fvol_pax_rake_stopper()
+
 
 pax_rake_stopper.check()
 #pax_rake_stopper.exportBrep(f"{outFileName}.brep")

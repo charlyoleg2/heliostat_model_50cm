@@ -430,7 +430,13 @@ def fex_subpax_ring_teeth():
 	return VFP
 subpax_ring_teeth = fex_subpax_ring_teeth()
 
-pax_ring = subpax_ring_base.fuse([subpax_ring_teeth])
+def fvol_pax_ring():
+	V000 = subpax_ring_base
+	V001 = V000.fuse(subpax_ring_teeth)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_ring = fvol_pax_ring()
+
 
 pax_ring.check()
 #pax_ring.exportBrep(f"{outFileName}.brep")

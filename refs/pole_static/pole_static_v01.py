@@ -1296,7 +1296,7 @@ def ctr_face_vaxis_holderB2_faceButtress2_Fa0_Ctr0():
 	S000 = Part.LineSegment(P000, P001)
 	P002 = App.Vector(32.9983, 10.0000, 0)
 	S001 = Part.LineSegment(P001, P002)
-	P003 = App.Vector(29.0000, 7.0000, 0)
+	P003 = App.Vector(29.0000, 6.0000, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(29.0000, 1.0000, 0)
 	S003 = Part.LineSegment(P003, P000)
@@ -1314,6 +1314,38 @@ def face_vaxis_holderB2_faceButtress2_Fa0():
 
 def vaxis_holderB2_faceButtress2():
 	FA000 = face_vaxis_holderB2_faceButtress2_Fa0()
+	rOneFig = FA000
+	rOneFig.check()
+	return rOneFig
+
+def ctr_face_vaxis_holderB2_faceButtress12_Fa0_Ctr0():
+	P000 = App.Vector(34.4091, 0.0000, 0)
+	P001 = App.Vector(32.9983, 10.0000, 0)
+	S000 = Part.LineSegment(P000, P001)
+	P002 = App.Vector(29.0000, 6.0000, 0)
+	S001 = Part.LineSegment(P001, P002)
+	P003 = App.Vector(29.0000, 1.0000, 0)
+	S002 = Part.LineSegment(P002, P003)
+	P004 = App.Vector(29.0000, -1.0000, 0)
+	S003 = Part.LineSegment(P003, P004)
+	P005 = App.Vector(33.8165, -10.0000, 0)
+	S004 = Part.LineSegment(P004, P005)
+	P006 = App.Vector(34.4091, 0.0000, 0)
+	S005 = Part.LineSegment(P005, P000)
+	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
+	aWire = Part.Wire(aShape.Edges)
+	subFace = Part.Face(aWire)
+	subFace.check()
+	return subFace
+
+def face_vaxis_holderB2_faceButtress12_Fa0():
+	FC000 = ctr_face_vaxis_holderB2_faceButtress12_Fa0_Ctr0()
+	rOneFace = FC000
+	rOneFace.check()
+	return rOneFace
+
+def vaxis_holderB2_faceButtress12():
+	FA000 = face_vaxis_holderB2_faceButtress12_Fa0()
 	rOneFig = FA000
 	rOneFig.check()
 	return rOneFig
@@ -1338,68 +1370,8 @@ def fex_subpax_vaxis_holderB2_petal():
 	return VFP
 subpax_vaxis_holderB2_petal = fex_subpax_vaxis_holderB2_petal()
 
-def fex_subpax_vaxis_holderB2_b1_0():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
-	VFP = VR3.translate(App.Vector(0.0000, 1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_0 = fex_subpax_vaxis_holderB2_b1_0()
-
-def fex_subpax_vaxis_holderB2_b1_1():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 60.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_1 = fex_subpax_vaxis_holderB2_b1_1()
-
-def fex_subpax_vaxis_holderB2_b1_2():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 120.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_2 = fex_subpax_vaxis_holderB2_b1_2()
-
-def fex_subpax_vaxis_holderB2_b1_3():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 180.0000)
-	VFP = VR3.translate(App.Vector(-0.0000, -1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_3 = fex_subpax_vaxis_holderB2_b1_3()
-
-def fex_subpax_vaxis_holderB2_b1_4():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -120.0000)
-	VFP = VR3.translate(App.Vector(0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_4 = fex_subpax_vaxis_holderB2_b1_4()
-
-def fex_subpax_vaxis_holderB2_b1_5():
-	FIG = vaxis_holderB2_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -60.0000)
-	VFP = VR3.translate(App.Vector(0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB2_b1_5 = fex_subpax_vaxis_holderB2_b1_5()
-
 def fex_subpax_vaxis_holderB2_b2_0():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1409,7 +1381,7 @@ def fex_subpax_vaxis_holderB2_b2_0():
 subpax_vaxis_holderB2_b2_0 = fex_subpax_vaxis_holderB2_b2_0()
 
 def fex_subpax_vaxis_holderB2_b2_1():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1419,7 +1391,7 @@ def fex_subpax_vaxis_holderB2_b2_1():
 subpax_vaxis_holderB2_b2_1 = fex_subpax_vaxis_holderB2_b2_1()
 
 def fex_subpax_vaxis_holderB2_b2_2():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1429,7 +1401,7 @@ def fex_subpax_vaxis_holderB2_b2_2():
 subpax_vaxis_holderB2_b2_2 = fex_subpax_vaxis_holderB2_b2_2()
 
 def fex_subpax_vaxis_holderB2_b2_3():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1439,7 +1411,7 @@ def fex_subpax_vaxis_holderB2_b2_3():
 subpax_vaxis_holderB2_b2_3 = fex_subpax_vaxis_holderB2_b2_3()
 
 def fex_subpax_vaxis_holderB2_b2_4():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1449,7 +1421,7 @@ def fex_subpax_vaxis_holderB2_b2_4():
 subpax_vaxis_holderB2_b2_4 = fex_subpax_vaxis_holderB2_b2_4()
 
 def fex_subpax_vaxis_holderB2_b2_5():
-	FIG = vaxis_holderB2_faceButtress2()
+	FIG = vaxis_holderB2_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1458,7 +1430,19 @@ def fex_subpax_vaxis_holderB2_b2_5():
 	return VFP
 subpax_vaxis_holderB2_b2_5 = fex_subpax_vaxis_holderB2_b2_5()
 
-pax_vaxis_holderB2 = subpax_vaxis_holderB2_petal.fuse([subpax_vaxis_holderB2_outer, subpax_vaxis_holderB2_b1_0, subpax_vaxis_holderB2_b1_1, subpax_vaxis_holderB2_b1_2, subpax_vaxis_holderB2_b1_3, subpax_vaxis_holderB2_b1_4, subpax_vaxis_holderB2_b1_5, subpax_vaxis_holderB2_b2_0, subpax_vaxis_holderB2_b2_1, subpax_vaxis_holderB2_b2_2, subpax_vaxis_holderB2_b2_3, subpax_vaxis_holderB2_b2_4, subpax_vaxis_holderB2_b2_5])
+def fvol_pax_vaxis_holderB2():
+	V000 = subpax_vaxis_holderB2_petal
+	V001 = V000.fuse(subpax_vaxis_holderB2_outer)
+	V002 = V001.fuse(subpax_vaxis_holderB2_b2_0)
+	V003 = V002.fuse(subpax_vaxis_holderB2_b2_1)
+	V004 = V003.fuse(subpax_vaxis_holderB2_b2_2)
+	V005 = V004.fuse(subpax_vaxis_holderB2_b2_3)
+	V006 = V005.fuse(subpax_vaxis_holderB2_b2_4)
+	V007 = V006.fuse(subpax_vaxis_holderB2_b2_5)
+	VFC = V007.removeSplitter()
+	return VFC
+pax_vaxis_holderB2 = fvol_pax_vaxis_holderB2()
+
 def ctr_face_vaxis_holderB1_facePetal_Fa0_Ctr0():
 	# Radius, XYZ-position, orientation
 	aCircle = Part.makeCircle(39.9120, App.Vector(0.0000, 0.0000, 0), App.Vector(0, 0, 1))
@@ -1699,7 +1683,7 @@ def ctr_face_vaxis_holderB1_faceButtress2_Fa0_Ctr0():
 	S000 = Part.LineSegment(P000, P001)
 	P002 = App.Vector(39.5438, 10.0000, 0)
 	S001 = Part.LineSegment(P001, P002)
-	P003 = App.Vector(29.0000, 7.0000, 0)
+	P003 = App.Vector(29.0000, 6.0000, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(29.0000, 1.0000, 0)
 	S003 = Part.LineSegment(P003, P000)
@@ -1717,6 +1701,38 @@ def face_vaxis_holderB1_faceButtress2_Fa0():
 
 def vaxis_holderB1_faceButtress2():
 	FA000 = face_vaxis_holderB1_faceButtress2_Fa0()
+	rOneFig = FA000
+	rOneFig.check()
+	return rOneFig
+
+def ctr_face_vaxis_holderB1_faceButtress12_Fa0_Ctr0():
+	P000 = App.Vector(40.9545, 0.0000, 0)
+	P001 = App.Vector(39.5438, 10.0000, 0)
+	S000 = Part.LineSegment(P000, P001)
+	P002 = App.Vector(29.0000, 6.0000, 0)
+	S001 = Part.LineSegment(P001, P002)
+	P003 = App.Vector(29.0000, 1.0000, 0)
+	S002 = Part.LineSegment(P002, P003)
+	P004 = App.Vector(29.0000, -1.0000, 0)
+	S003 = Part.LineSegment(P003, P004)
+	P005 = App.Vector(40.3620, -10.0000, 0)
+	S004 = Part.LineSegment(P004, P005)
+	P006 = App.Vector(40.9545, 0.0000, 0)
+	S005 = Part.LineSegment(P005, P000)
+	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
+	aWire = Part.Wire(aShape.Edges)
+	subFace = Part.Face(aWire)
+	subFace.check()
+	return subFace
+
+def face_vaxis_holderB1_faceButtress12_Fa0():
+	FC000 = ctr_face_vaxis_holderB1_faceButtress12_Fa0_Ctr0()
+	rOneFace = FC000
+	rOneFace.check()
+	return rOneFace
+
+def vaxis_holderB1_faceButtress12():
+	FA000 = face_vaxis_holderB1_faceButtress12_Fa0()
 	rOneFig = FA000
 	rOneFig.check()
 	return rOneFig
@@ -1741,68 +1757,8 @@ def fex_subpax_vaxis_holderB1_petal():
 	return VFP
 subpax_vaxis_holderB1_petal = fex_subpax_vaxis_holderB1_petal()
 
-def fex_subpax_vaxis_holderB1_b1_0():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
-	VFP = VR3.translate(App.Vector(0.0000, 1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_0 = fex_subpax_vaxis_holderB1_b1_0()
-
-def fex_subpax_vaxis_holderB1_b1_1():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 60.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_1 = fex_subpax_vaxis_holderB1_b1_1()
-
-def fex_subpax_vaxis_holderB1_b1_2():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 120.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_2 = fex_subpax_vaxis_holderB1_b1_2()
-
-def fex_subpax_vaxis_holderB1_b1_3():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 180.0000)
-	VFP = VR3.translate(App.Vector(-0.0000, -1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_3 = fex_subpax_vaxis_holderB1_b1_3()
-
-def fex_subpax_vaxis_holderB1_b1_4():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -120.0000)
-	VFP = VR3.translate(App.Vector(0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_4 = fex_subpax_vaxis_holderB1_b1_4()
-
-def fex_subpax_vaxis_holderB1_b1_5():
-	FIG = vaxis_holderB1_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -60.0000)
-	VFP = VR3.translate(App.Vector(0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderB1_b1_5 = fex_subpax_vaxis_holderB1_b1_5()
-
 def fex_subpax_vaxis_holderB1_b2_0():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1812,7 +1768,7 @@ def fex_subpax_vaxis_holderB1_b2_0():
 subpax_vaxis_holderB1_b2_0 = fex_subpax_vaxis_holderB1_b2_0()
 
 def fex_subpax_vaxis_holderB1_b2_1():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1822,7 +1778,7 @@ def fex_subpax_vaxis_holderB1_b2_1():
 subpax_vaxis_holderB1_b2_1 = fex_subpax_vaxis_holderB1_b2_1()
 
 def fex_subpax_vaxis_holderB1_b2_2():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1832,7 +1788,7 @@ def fex_subpax_vaxis_holderB1_b2_2():
 subpax_vaxis_holderB1_b2_2 = fex_subpax_vaxis_holderB1_b2_2()
 
 def fex_subpax_vaxis_holderB1_b2_3():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1842,7 +1798,7 @@ def fex_subpax_vaxis_holderB1_b2_3():
 subpax_vaxis_holderB1_b2_3 = fex_subpax_vaxis_holderB1_b2_3()
 
 def fex_subpax_vaxis_holderB1_b2_4():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1852,7 +1808,7 @@ def fex_subpax_vaxis_holderB1_b2_4():
 subpax_vaxis_holderB1_b2_4 = fex_subpax_vaxis_holderB1_b2_4()
 
 def fex_subpax_vaxis_holderB1_b2_5():
-	FIG = vaxis_holderB1_faceButtress2()
+	FIG = vaxis_holderB1_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -1861,7 +1817,19 @@ def fex_subpax_vaxis_holderB1_b2_5():
 	return VFP
 subpax_vaxis_holderB1_b2_5 = fex_subpax_vaxis_holderB1_b2_5()
 
-pax_vaxis_holderB1 = subpax_vaxis_holderB1_petal.fuse([subpax_vaxis_holderB1_outer, subpax_vaxis_holderB1_b1_0, subpax_vaxis_holderB1_b1_1, subpax_vaxis_holderB1_b1_2, subpax_vaxis_holderB1_b1_3, subpax_vaxis_holderB1_b1_4, subpax_vaxis_holderB1_b1_5, subpax_vaxis_holderB1_b2_0, subpax_vaxis_holderB1_b2_1, subpax_vaxis_holderB1_b2_2, subpax_vaxis_holderB1_b2_3, subpax_vaxis_holderB1_b2_4, subpax_vaxis_holderB1_b2_5])
+def fvol_pax_vaxis_holderB1():
+	V000 = subpax_vaxis_holderB1_petal
+	V001 = V000.fuse(subpax_vaxis_holderB1_outer)
+	V002 = V001.fuse(subpax_vaxis_holderB1_b2_0)
+	V003 = V002.fuse(subpax_vaxis_holderB1_b2_1)
+	V004 = V003.fuse(subpax_vaxis_holderB1_b2_2)
+	V005 = V004.fuse(subpax_vaxis_holderB1_b2_3)
+	V006 = V005.fuse(subpax_vaxis_holderB1_b2_4)
+	V007 = V006.fuse(subpax_vaxis_holderB1_b2_5)
+	VFC = V007.removeSplitter()
+	return VFC
+pax_vaxis_holderB1 = fvol_pax_vaxis_holderB1()
+
 def ctr_face_vaxis_holderA_facePetal_Fa0_Ctr0():
 	# Radius, XYZ-position, orientation
 	aCircle = Part.makeCircle(41.5483, App.Vector(0.0000, 0.0000, 0), App.Vector(0, 0, 1))
@@ -2102,7 +2070,7 @@ def ctr_face_vaxis_holderA_faceButtress2_Fa0_Ctr0():
 	S000 = Part.LineSegment(P000, P001)
 	P002 = App.Vector(41.1801, 10.0000, 0)
 	S001 = Part.LineSegment(P001, P002)
-	P003 = App.Vector(34.0000, 7.0000, 0)
+	P003 = App.Vector(34.0000, 6.0000, 0)
 	S002 = Part.LineSegment(P002, P003)
 	P004 = App.Vector(34.0000, 1.0000, 0)
 	S003 = Part.LineSegment(P003, P000)
@@ -2120,6 +2088,38 @@ def face_vaxis_holderA_faceButtress2_Fa0():
 
 def vaxis_holderA_faceButtress2():
 	FA000 = face_vaxis_holderA_faceButtress2_Fa0()
+	rOneFig = FA000
+	rOneFig.check()
+	return rOneFig
+
+def ctr_face_vaxis_holderA_faceButtress12_Fa0_Ctr0():
+	P000 = App.Vector(42.5909, 0.0000, 0)
+	P001 = App.Vector(41.1801, 10.0000, 0)
+	S000 = Part.LineSegment(P000, P001)
+	P002 = App.Vector(34.0000, 6.0000, 0)
+	S001 = Part.LineSegment(P001, P002)
+	P003 = App.Vector(34.0000, 1.0000, 0)
+	S002 = Part.LineSegment(P002, P003)
+	P004 = App.Vector(34.0000, -1.0000, 0)
+	S003 = Part.LineSegment(P003, P004)
+	P005 = App.Vector(41.9983, -10.0000, 0)
+	S004 = Part.LineSegment(P004, P005)
+	P006 = App.Vector(42.5909, 0.0000, 0)
+	S005 = Part.LineSegment(P005, P000)
+	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])
+	aWire = Part.Wire(aShape.Edges)
+	subFace = Part.Face(aWire)
+	subFace.check()
+	return subFace
+
+def face_vaxis_holderA_faceButtress12_Fa0():
+	FC000 = ctr_face_vaxis_holderA_faceButtress12_Fa0_Ctr0()
+	rOneFace = FC000
+	rOneFace.check()
+	return rOneFace
+
+def vaxis_holderA_faceButtress12():
+	FA000 = face_vaxis_holderA_faceButtress12_Fa0()
 	rOneFig = FA000
 	rOneFig.check()
 	return rOneFig
@@ -2144,68 +2144,8 @@ def fex_subpax_vaxis_holderA_petal():
 	return VFP
 subpax_vaxis_holderA_petal = fex_subpax_vaxis_holderA_petal()
 
-def fex_subpax_vaxis_holderA_b1_0():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 0.0000)
-	VFP = VR3.translate(App.Vector(0.0000, 1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_0 = fex_subpax_vaxis_holderA_b1_0()
-
-def fex_subpax_vaxis_holderA_b1_1():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 60.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_1 = fex_subpax_vaxis_holderA_b1_1()
-
-def fex_subpax_vaxis_holderA_b1_2():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 120.0000)
-	VFP = VR3.translate(App.Vector(-0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_2 = fex_subpax_vaxis_holderA_b1_2()
-
-def fex_subpax_vaxis_holderA_b1_3():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), 180.0000)
-	VFP = VR3.translate(App.Vector(-0.0000, -1.0000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_3 = fex_subpax_vaxis_holderA_b1_3()
-
-def fex_subpax_vaxis_holderA_b1_4():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -120.0000)
-	VFP = VR3.translate(App.Vector(0.8660, -0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_4 = fex_subpax_vaxis_holderA_b1_4()
-
-def fex_subpax_vaxis_holderA_b1_5():
-	FIG = vaxis_holderA_faceButtress1()
-	VEX = FIG.extrude(App.Vector(0, 0, 2))
-	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
-	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
-	VR3 = VR2.rotate(App.Vector(0, 0, 0), App.Vector(0, 0, 1), -60.0000)
-	VFP = VR3.translate(App.Vector(0.8660, 0.5000, 0.0000))
-	return VFP
-subpax_vaxis_holderA_b1_5 = fex_subpax_vaxis_holderA_b1_5()
-
 def fex_subpax_vaxis_holderA_b2_0():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2215,7 +2155,7 @@ def fex_subpax_vaxis_holderA_b2_0():
 subpax_vaxis_holderA_b2_0 = fex_subpax_vaxis_holderA_b2_0()
 
 def fex_subpax_vaxis_holderA_b2_1():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2225,7 +2165,7 @@ def fex_subpax_vaxis_holderA_b2_1():
 subpax_vaxis_holderA_b2_1 = fex_subpax_vaxis_holderA_b2_1()
 
 def fex_subpax_vaxis_holderA_b2_2():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2235,7 +2175,7 @@ def fex_subpax_vaxis_holderA_b2_2():
 subpax_vaxis_holderA_b2_2 = fex_subpax_vaxis_holderA_b2_2()
 
 def fex_subpax_vaxis_holderA_b2_3():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2245,7 +2185,7 @@ def fex_subpax_vaxis_holderA_b2_3():
 subpax_vaxis_holderA_b2_3 = fex_subpax_vaxis_holderA_b2_3()
 
 def fex_subpax_vaxis_holderA_b2_4():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2255,7 +2195,7 @@ def fex_subpax_vaxis_holderA_b2_4():
 subpax_vaxis_holderA_b2_4 = fex_subpax_vaxis_holderA_b2_4()
 
 def fex_subpax_vaxis_holderA_b2_5():
-	FIG = vaxis_holderA_faceButtress2()
+	FIG = vaxis_holderA_faceButtress12()
 	VEX = FIG.extrude(App.Vector(0, 0, 2))
 	VR1 = VEX.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 90.0000)
 	VR2 = VR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2264,7 +2204,19 @@ def fex_subpax_vaxis_holderA_b2_5():
 	return VFP
 subpax_vaxis_holderA_b2_5 = fex_subpax_vaxis_holderA_b2_5()
 
-pax_vaxis_holderA = subpax_vaxis_holderA_petal.fuse([subpax_vaxis_holderA_outer, subpax_vaxis_holderA_b1_0, subpax_vaxis_holderA_b1_1, subpax_vaxis_holderA_b1_2, subpax_vaxis_holderA_b1_3, subpax_vaxis_holderA_b1_4, subpax_vaxis_holderA_b1_5, subpax_vaxis_holderA_b2_0, subpax_vaxis_holderA_b2_1, subpax_vaxis_holderA_b2_2, subpax_vaxis_holderA_b2_3, subpax_vaxis_holderA_b2_4, subpax_vaxis_holderA_b2_5])
+def fvol_pax_vaxis_holderA():
+	V000 = subpax_vaxis_holderA_petal
+	V001 = V000.fuse(subpax_vaxis_holderA_outer)
+	V002 = V001.fuse(subpax_vaxis_holderA_b2_0)
+	V003 = V002.fuse(subpax_vaxis_holderA_b2_1)
+	V004 = V003.fuse(subpax_vaxis_holderA_b2_2)
+	V005 = V004.fuse(subpax_vaxis_holderA_b2_3)
+	V006 = V005.fuse(subpax_vaxis_holderA_b2_4)
+	V007 = V006.fuse(subpax_vaxis_holderA_b2_5)
+	VFC = V007.removeSplitter()
+	return VFC
+pax_vaxis_holderA = fvol_pax_vaxis_holderA()
+
 def finh_inpax_pole_static_hB2():
 	IVR1 = pax_vaxis_holderB2.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
 	IVR2 = IVR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -2339,9 +2291,31 @@ def fex_subpax_pole_static_emptyDoor():
 	return VFP
 subpax_pole_static_emptyDoor = fex_subpax_pole_static_emptyDoor()
 
-ipax_pole_static_door = subpax_pole_static_door.common([subpax_pole_static_emptyPole])
-ipax_pole_static_pole = subpax_pole_static_pole.cut([subpax_pole_static_emptyDoor])
-pax_pole_static = ipax_pole_static_pole.fuse([subpax_pole_static_bottom, ipax_pole_static_door, inpax_pole_static_hB2, inpax_pole_static_hB1, inpax_pole_static_hA])
+def fvol_ipax_pole_static_door():
+	V000 = subpax_pole_static_door
+	V001 = V000.common(subpax_pole_static_emptyPole)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_pole_static_door = fvol_ipax_pole_static_door()
+
+def fvol_ipax_pole_static_pole():
+	V000 = subpax_pole_static_pole
+	V001 = V000.cut(subpax_pole_static_emptyDoor)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_pole_static_pole = fvol_ipax_pole_static_pole()
+
+def fvol_pax_pole_static():
+	V000 = ipax_pole_static_pole
+	V001 = V000.fuse(subpax_pole_static_bottom)
+	V002 = V001.fuse(ipax_pole_static_door)
+	V003 = V002.fuse(inpax_pole_static_hB2)
+	V004 = V003.fuse(inpax_pole_static_hB1)
+	V005 = V004.fuse(inpax_pole_static_hA)
+	VFC = V005.removeSplitter()
+	return VFC
+pax_pole_static = fvol_pax_pole_static()
+
 
 pax_pole_static.check()
 #pax_pole_static.exportBrep(f"{outFileName}.brep")

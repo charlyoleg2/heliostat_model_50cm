@@ -1129,7 +1129,23 @@ def fex_subpax_swing_buttress_9():
 	return VFP
 subpax_swing_buttress_9 = fex_subpax_swing_buttress_9()
 
-pax_swing = subpax_swing_side.fuse([subpax_swing_face, subpax_swing_buttress_0, subpax_swing_buttress_1, subpax_swing_buttress_2, subpax_swing_buttress_3, subpax_swing_buttress_4, subpax_swing_buttress_5, subpax_swing_buttress_6, subpax_swing_buttress_7, subpax_swing_buttress_8, subpax_swing_buttress_9])
+def fvol_pax_swing():
+	V000 = subpax_swing_side
+	V001 = V000.fuse(subpax_swing_face)
+	V002 = V001.fuse(subpax_swing_buttress_0)
+	V003 = V002.fuse(subpax_swing_buttress_1)
+	V004 = V003.fuse(subpax_swing_buttress_2)
+	V005 = V004.fuse(subpax_swing_buttress_3)
+	V006 = V005.fuse(subpax_swing_buttress_4)
+	V007 = V006.fuse(subpax_swing_buttress_5)
+	V008 = V007.fuse(subpax_swing_buttress_6)
+	V009 = V008.fuse(subpax_swing_buttress_7)
+	V010 = V009.fuse(subpax_swing_buttress_8)
+	V011 = V010.fuse(subpax_swing_buttress_9)
+	VFC = V011.removeSplitter()
+	return VFC
+pax_swing = fvol_pax_swing()
+
 
 pax_swing.check()
 #pax_swing.exportBrep(f"{outFileName}.brep")

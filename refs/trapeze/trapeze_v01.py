@@ -546,12 +546,53 @@ def fex_subpax_trapeze_cut2():
 	return VFP
 subpax_trapeze_cut2 = fex_subpax_trapeze_cut2()
 
-ipax_trapeze_rawRod = subpax_trapeze_rod1.fuse([subpax_trapeze_rod2, subpax_trapeze_rod3, subpax_trapeze_rod4])
-ipax_trapeze_rodHollow = subpax_trapeze_rodH1.fuse([subpax_trapeze_rodH2, subpax_trapeze_rodH3, subpax_trapeze_rodH4])
-ipax_trapeze_halfRods = ipax_trapeze_rawRod.cut([subpax_trapeze_cut1])
-ipax_trapeze_rods = ipax_trapeze_halfRods.cut([subpax_trapeze_cut2])
-ipax_trapeze_plus = subpax_trapeze_frame.fuse([subpax_trapeze_plate, ipax_trapeze_rods])
-pax_trapeze = ipax_trapeze_plus.cut([ipax_trapeze_rodHollow])
+def fvol_ipax_trapeze_rawRod():
+	V000 = subpax_trapeze_rod1
+	V001 = V000.fuse(subpax_trapeze_rod2)
+	V002 = V001.fuse(subpax_trapeze_rod3)
+	V003 = V002.fuse(subpax_trapeze_rod4)
+	VFC = V003.removeSplitter()
+	return VFC
+ipax_trapeze_rawRod = fvol_ipax_trapeze_rawRod()
+
+def fvol_ipax_trapeze_rodHollow():
+	V000 = subpax_trapeze_rodH1
+	V001 = V000.fuse(subpax_trapeze_rodH2)
+	V002 = V001.fuse(subpax_trapeze_rodH3)
+	V003 = V002.fuse(subpax_trapeze_rodH4)
+	VFC = V003.removeSplitter()
+	return VFC
+ipax_trapeze_rodHollow = fvol_ipax_trapeze_rodHollow()
+
+def fvol_ipax_trapeze_halfRods():
+	V000 = ipax_trapeze_rawRod
+	V001 = V000.cut(subpax_trapeze_cut1)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_trapeze_halfRods = fvol_ipax_trapeze_halfRods()
+
+def fvol_ipax_trapeze_rods():
+	V000 = ipax_trapeze_halfRods
+	V001 = V000.cut(subpax_trapeze_cut2)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_trapeze_rods = fvol_ipax_trapeze_rods()
+
+def fvol_ipax_trapeze_plus():
+	V000 = subpax_trapeze_frame
+	V001 = V000.fuse(subpax_trapeze_plate)
+	V002 = V001.fuse(ipax_trapeze_rods)
+	VFC = V002.removeSplitter()
+	return VFC
+ipax_trapeze_plus = fvol_ipax_trapeze_plus()
+
+def fvol_pax_trapeze():
+	V000 = ipax_trapeze_plus
+	V001 = V000.cut(ipax_trapeze_rodHollow)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_trapeze = fvol_pax_trapeze()
+
 
 pax_trapeze.check()
 #pax_trapeze.exportBrep(f"{outFileName}.brep")

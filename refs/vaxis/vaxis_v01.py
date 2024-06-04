@@ -288,7 +288,14 @@ def fex_subpax_vaxis_top():
 	return VFP
 subpax_vaxis_top = fex_subpax_vaxis_top()
 
-pax_vaxis = subpax_vaxis_pole.fuse([subpax_vaxis_bottom, subpax_vaxis_top])
+def fvol_pax_vaxis():
+	V000 = subpax_vaxis_pole
+	V001 = V000.fuse(subpax_vaxis_bottom)
+	V002 = V001.fuse(subpax_vaxis_top)
+	VFC = V002.removeSplitter()
+	return VFC
+pax_vaxis = fvol_pax_vaxis()
+
 
 pax_vaxis.check()
 #pax_vaxis.exportBrep(f"{outFileName}.brep")

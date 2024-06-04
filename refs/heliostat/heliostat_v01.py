@@ -1261,9 +1261,28 @@ def fex_subpax_pole_static_emptyDoor():
 	return VFP
 subpax_pole_static_emptyDoor = fex_subpax_pole_static_emptyDoor()
 
-ipax_pole_static_door = subpax_pole_static_door.common([subpax_pole_static_emptyPole])
-ipax_pole_static_pole = subpax_pole_static_pole.cut([subpax_pole_static_emptyDoor])
-pax_pole_static = ipax_pole_static_pole.fuse([subpax_pole_static_bottom, ipax_pole_static_door])
+def fvol_ipax_pole_static_door():
+	V000 = subpax_pole_static_door
+	V001 = V000.common(subpax_pole_static_emptyPole)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_pole_static_door = fvol_ipax_pole_static_door()
+
+def fvol_ipax_pole_static_pole():
+	V000 = subpax_pole_static_pole
+	V001 = V000.cut(subpax_pole_static_emptyDoor)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_pole_static_pole = fvol_ipax_pole_static_pole()
+
+def fvol_pax_pole_static():
+	V000 = ipax_pole_static_pole
+	V001 = V000.fuse(subpax_pole_static_bottom)
+	V002 = V001.fuse(ipax_pole_static_door)
+	VFC = V002.removeSplitter()
+	return VFC
+pax_pole_static = fvol_pax_pole_static()
+
 def ctr_face_rake_faceCone_Fa0_Ctr0():
 	P000 = App.Vector(40.0000, 0.0000, 0)
 	P001 = App.Vector(40.0000, 10.0000, 0)
@@ -1851,9 +1870,37 @@ def fex_subpax_rake_hand_3():
 	return VFP
 subpax_rake_hand_3 = fex_subpax_rake_hand_3()
 
-ipax_rake_plus = subpax_rake_cone.fuse([subpax_rake_beam, subpax_rake_disc, subpax_rake_hand_0, subpax_rake_hand_1, subpax_rake_hand_2, subpax_rake_hand_3, subpax_rake_wing_right, subpax_rake_wing_left])
-ipax_rake_hollow = subpax_rake_coneHollow.fuse([subpax_rake_beamHollow, subpax_rake_wing_hollow_right, subpax_rake_wing_hollow_left, subpax_rake_door])
-pax_rake = ipax_rake_plus.cut([ipax_rake_hollow])
+def fvol_ipax_rake_plus():
+	V000 = subpax_rake_cone
+	V001 = V000.fuse(subpax_rake_beam)
+	V002 = V001.fuse(subpax_rake_disc)
+	V003 = V002.fuse(subpax_rake_hand_0)
+	V004 = V003.fuse(subpax_rake_hand_1)
+	V005 = V004.fuse(subpax_rake_hand_2)
+	V006 = V005.fuse(subpax_rake_hand_3)
+	V007 = V006.fuse(subpax_rake_wing_right)
+	V008 = V007.fuse(subpax_rake_wing_left)
+	VFC = V008.removeSplitter()
+	return VFC
+ipax_rake_plus = fvol_ipax_rake_plus()
+
+def fvol_ipax_rake_hollow():
+	V000 = subpax_rake_coneHollow
+	V001 = V000.fuse(subpax_rake_beamHollow)
+	V002 = V001.fuse(subpax_rake_wing_hollow_right)
+	V003 = V002.fuse(subpax_rake_wing_hollow_left)
+	V004 = V003.fuse(subpax_rake_door)
+	VFC = V004.removeSplitter()
+	return VFC
+ipax_rake_hollow = fvol_ipax_rake_hollow()
+
+def fvol_pax_rake():
+	V000 = ipax_rake_plus
+	V001 = V000.cut(ipax_rake_hollow)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_rake = fvol_pax_rake()
+
 def ctr_face_swing_faceSide_Fa0_Ctr0():
 	# Radius, XYZ-position, orientation
 	aCircle = Part.makeCircle(10.0000, App.Vector(0.0000, 0.0000, 0), App.Vector(0, 0, 1))
@@ -2966,7 +3013,23 @@ def fex_subpax_swing_buttress_9():
 	return VFP
 subpax_swing_buttress_9 = fex_subpax_swing_buttress_9()
 
-pax_swing = subpax_swing_side.fuse([subpax_swing_face, subpax_swing_buttress_0, subpax_swing_buttress_1, subpax_swing_buttress_2, subpax_swing_buttress_3, subpax_swing_buttress_4, subpax_swing_buttress_5, subpax_swing_buttress_6, subpax_swing_buttress_7, subpax_swing_buttress_8, subpax_swing_buttress_9])
+def fvol_pax_swing():
+	V000 = subpax_swing_side
+	V001 = V000.fuse(subpax_swing_face)
+	V002 = V001.fuse(subpax_swing_buttress_0)
+	V003 = V002.fuse(subpax_swing_buttress_1)
+	V004 = V003.fuse(subpax_swing_buttress_2)
+	V005 = V004.fuse(subpax_swing_buttress_3)
+	V006 = V005.fuse(subpax_swing_buttress_4)
+	V007 = V006.fuse(subpax_swing_buttress_5)
+	V008 = V007.fuse(subpax_swing_buttress_6)
+	V009 = V008.fuse(subpax_swing_buttress_7)
+	V010 = V009.fuse(subpax_swing_buttress_8)
+	V011 = V010.fuse(subpax_swing_buttress_9)
+	VFC = V011.removeSplitter()
+	return VFC
+pax_swing = fvol_pax_swing()
+
 def ctr_face_spider_faceLegs_Fa0_Ctr0():
 	P000 = App.Vector(2.5000, -1.6583, 0)
 	P001 = App.Vector(2.5000, -8.0000, 0)
@@ -3208,7 +3271,18 @@ def fex_subpax_spider_leg_5():
 	return VFP
 subpax_spider_leg_5 = fex_subpax_spider_leg_5()
 
-pax_spider = subpax_spider_tube.fuse([subpax_spider_leg_0, subpax_spider_leg_1, subpax_spider_leg_2, subpax_spider_leg_3, subpax_spider_leg_4, subpax_spider_leg_5])
+def fvol_pax_spider():
+	V000 = subpax_spider_tube
+	V001 = V000.fuse(subpax_spider_leg_0)
+	V002 = V001.fuse(subpax_spider_leg_1)
+	V003 = V002.fuse(subpax_spider_leg_2)
+	V004 = V003.fuse(subpax_spider_leg_3)
+	V005 = V004.fuse(subpax_spider_leg_4)
+	V006 = V005.fuse(subpax_spider_leg_5)
+	VFC = V006.removeSplitter()
+	return VFC
+pax_spider = fvol_pax_spider()
+
 def finh_inpax_heliostat_poleStatic():
 	IVR1 = pax_pole_static.rotate(App.Vector(0, 0, 0), App.Vector(1, 0, 0), 0.0000)
 	IVR2 = IVR1.rotate(App.Vector(0, 0, 0), App.Vector(0, 1, 0), 0.0000)
@@ -3241,7 +3315,15 @@ def finh_inpax_heliostat_spider():
 	return IVF
 inpax_heliostat_spider = finh_inpax_heliostat_spider()
 
-pax_heliostat = inpax_heliostat_poleStatic.fuse([inpax_heliostat_rake, inpax_heliostat_swing, inpax_heliostat_spider])
+def fvol_pax_heliostat():
+	V000 = inpax_heliostat_poleStatic
+	V001 = V000.fuse(inpax_heliostat_rake)
+	V002 = V001.fuse(inpax_heliostat_swing)
+	V003 = V002.fuse(inpax_heliostat_spider)
+	VFC = V003.removeSplitter()
+	return VFC
+pax_heliostat = fvol_pax_heliostat()
+
 
 pax_heliostat.check()
 #pax_heliostat.exportBrep(f"{outFileName}.brep")

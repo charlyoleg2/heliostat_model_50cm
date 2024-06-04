@@ -878,7 +878,13 @@ def fex_subpax_rod_plates():
 	return VFP
 subpax_rod_plates = fex_subpax_rod_plates()
 
-pax_rod = subpax_rod_rod.fuse([subpax_rod_plates])
+def fvol_pax_rod():
+	V000 = subpax_rod_rod
+	V001 = V000.fuse(subpax_rod_plates)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_rod = fvol_pax_rod()
+
 
 pax_rod.check()
 #pax_rod.exportBrep(f"{outFileName}.brep")

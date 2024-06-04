@@ -252,7 +252,18 @@ def fex_subpax_spider_leg_5():
 	return VFP
 subpax_spider_leg_5 = fex_subpax_spider_leg_5()
 
-pax_spider = subpax_spider_tube.fuse([subpax_spider_leg_0, subpax_spider_leg_1, subpax_spider_leg_2, subpax_spider_leg_3, subpax_spider_leg_4, subpax_spider_leg_5])
+def fvol_pax_spider():
+	V000 = subpax_spider_tube
+	V001 = V000.fuse(subpax_spider_leg_0)
+	V002 = V001.fuse(subpax_spider_leg_1)
+	V003 = V002.fuse(subpax_spider_leg_2)
+	V004 = V003.fuse(subpax_spider_leg_3)
+	V005 = V004.fuse(subpax_spider_leg_4)
+	V006 = V005.fuse(subpax_spider_leg_5)
+	VFC = V006.removeSplitter()
+	return VFC
+pax_spider = fvol_pax_spider()
+
 
 pax_spider.check()
 #pax_spider.exportBrep(f"{outFileName}.brep")

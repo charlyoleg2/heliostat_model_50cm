@@ -540,9 +540,41 @@ def fex_subpax_base_hollow_15():
 	return VFP
 subpax_base_hollow_15 = fex_subpax_base_hollow_15()
 
-ipax_base_hollows = subpax_base_hollow_0.fuse([subpax_base_hollow_1, subpax_base_hollow_2, subpax_base_hollow_3, subpax_base_hollow_4, subpax_base_hollow_5, subpax_base_hollow_6, subpax_base_hollow_7, subpax_base_hollow_8, subpax_base_hollow_9, subpax_base_hollow_10, subpax_base_hollow_11, subpax_base_hollow_12, subpax_base_hollow_13, subpax_base_hollow_14, subpax_base_hollow_15])
-ipax_base_cylinder = subpax_base_cut.cut([ipax_base_hollows])
-pax_base = ipax_base_cylinder.fuse([subpax_base_top])
+def fvol_ipax_base_hollows():
+	V000 = subpax_base_hollow_0
+	V001 = V000.fuse(subpax_base_hollow_1)
+	V002 = V001.fuse(subpax_base_hollow_2)
+	V003 = V002.fuse(subpax_base_hollow_3)
+	V004 = V003.fuse(subpax_base_hollow_4)
+	V005 = V004.fuse(subpax_base_hollow_5)
+	V006 = V005.fuse(subpax_base_hollow_6)
+	V007 = V006.fuse(subpax_base_hollow_7)
+	V008 = V007.fuse(subpax_base_hollow_8)
+	V009 = V008.fuse(subpax_base_hollow_9)
+	V010 = V009.fuse(subpax_base_hollow_10)
+	V011 = V010.fuse(subpax_base_hollow_11)
+	V012 = V011.fuse(subpax_base_hollow_12)
+	V013 = V012.fuse(subpax_base_hollow_13)
+	V014 = V013.fuse(subpax_base_hollow_14)
+	V015 = V014.fuse(subpax_base_hollow_15)
+	VFC = V015.removeSplitter()
+	return VFC
+ipax_base_hollows = fvol_ipax_base_hollows()
+
+def fvol_ipax_base_cylinder():
+	V000 = subpax_base_cut
+	V001 = V000.cut(ipax_base_hollows)
+	VFC = V001.removeSplitter()
+	return VFC
+ipax_base_cylinder = fvol_ipax_base_cylinder()
+
+def fvol_pax_base():
+	V000 = ipax_base_cylinder
+	V001 = V000.fuse(subpax_base_top)
+	VFC = V001.removeSplitter()
+	return VFC
+pax_base = fvol_pax_base()
+
 
 pax_base.check()
 #pax_base.exportBrep(f"{outFileName}.brep")
