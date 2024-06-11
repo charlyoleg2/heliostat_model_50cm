@@ -18,6 +18,7 @@
 		"make_heliostat": "node make_heliostat.js",
 		"git_clean": "git clean -f",
 		"install_jscad": "npm install --prefix=refs @jscad/cli",
+		"check_jscad": "npx --prefix=refs jscad -v",
 		"ls_refs": "ls -ltra refs"
 	},
 	"repository": {
