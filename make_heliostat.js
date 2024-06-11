@@ -44,8 +44,8 @@ function getCmd(dName, fName) {
 	//rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.scad write scad_3d_openscad`);
 	//rCmd.push(`openscad -o refs/${dName}/${fName}.stl refs/${dName}/${fName}.scad`);
 	// JsCAD
-	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.scad write js_3d_jscad`);
-	rCmd.push(`jscad refs/${dName}/${fName}.js -o refs/${dName}/${fName}.stl`);
+	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.js write js_3d_openjscad`);
+	rCmd.push(`npx jscad refs/${dName}/${fName}.js -o refs/${dName}/${fName}.stl`);
 	// FreeCAD
 	//rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.py write py_3d_freecad`);
 	//rCmd.push(`freecad.cmd refs/${dName}/${fName}.py refs/${dName}/${fName}`);
