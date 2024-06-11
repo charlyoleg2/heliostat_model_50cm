@@ -17,6 +17,7 @@
 		"base_stl": "openscad -o refs/base/base_v01.stl refs/base/base_v01.scad",
 		"make_heliostat": "node make_heliostat.js",
 		"git_clean": "git clean -f",
+		"install_jscad": "npm install --prefix=refs @jscad/cli",
 		"ls_refs": "ls -ltra refs"
 	},
 	"repository": {
