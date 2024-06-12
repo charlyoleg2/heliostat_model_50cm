@@ -40,6 +40,7 @@
 	"homepage": "https://github.com/charlyoleg2/heliostat_model_50cm#readme",
 	"devDependencies": {
 		"designix-cli": "^0.5.36",
-		"designix-uis": "^0.5.26"
+		"designix-uis": "^0.5.26",
+		"shx": "^0.3.4"
 	}
 }
