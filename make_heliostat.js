@@ -26,6 +26,28 @@ const c_Parts = {
 	surface: 'surface_v01'
 };
 
+const c_svgdxf = {
+	heliostat: ['faceSide', 'faceFace'],
+	heliostat_2: ['faceSide', 'faceFace', 'faceTop'],
+	base: ['faceCut', 'faceTop', 'faceHollow'],
+	pole_static: ['poleCut', 'poleFace', 'poleBottom', 'emptyPole', 'emptyDoor', 'holderB2Section', 'holderB2Top', 'holderB1Section', 'holderB1Top', 'holderASection', 'holderATop'],
+	vaxis: ['faceCut', 'faceBottom'],
+	vaxis_holder_A: ['facePetal', 'faceOuter', 'faceButtress1', 'faceButtress2', 'faceButtress12'],
+	vaxis_holder_B1: ['facePetal', 'faceOuter', 'faceButtress1', 'faceButtress2', 'faceButtress12'],
+	vaxis_holder_B2: ['facePetal', 'faceOuter', 'faceButtress1', 'faceButtress2', 'faceButtress12'],
+	ring: ['faceRingBase', 'faceRingTeeth', 'faceSection'],
+	ring_guidance: ['faceTop', 'faceSection'],
+	vaxis_guidance: ['faceTop', 'faceSection'],
+	rake: ['faceCone', 'faceConeHollow', 'faceBeam', 'faceBeamHollow', 'faceDisc', 'faceHand', 'faceWing', 'faceWingHollow', 'faceDoor'],
+	rake_stopper: [], // too much figures (18), so skipped
+	haxis_guidance: ['faceProfile', 'faceSide'],
+	spider: ['faceLegs', 'faceTube', 'faceBody'],
+	swing: ['faceSide', 'faceFace', 'faceTop', 'faceButtress', 'faceTopWithRods'],
+	rod: ['faceCut', 'facePlate', 'faceTop'],
+	trapeze: ['faceFrame', 'facePlate', 'faceRod', 'faceRodHollow', 'faceCutRod'],
+	surface: ['faceSurface', 'faceOnePanel']
+};
+
 function inferDesignName(instanceName) {
 	const re = /_[A-Z][0-9]*$/;
 	const rDesignName = instanceName.replace(re, '');
@@ -40,14 +62,21 @@ function getCmd(dName, fName) {
 	//rCmd.push(`ls refs/${dName}`);
 	//rCmd.push(`npx designix-cli -d=heliostat/${desiName} -o=refs/${dName} --outFileName=px_${fName}.json write json_param`);
 	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.log.txt write compute_log`);
+	// svg, dxf
+	for (const face of c_svgdxf[desiName]) {
+		rCmd.push(`npx designix-cli -d=gear/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}_${face}.svg write svg__${face}`);
+		rCmd.push(`npx designix-cli -d=gear/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}_${face}.dxf write dxf__${face}`);
+	}
+	// paxJson
+	rCmd.push(`npx designix-cli -d=gear/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.pax.json write pax_all`);
 	// OpenSCAD
 	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.scad write scad_3d_openscad`);
-	rCmd.push(`openscad -o refs/${dName}/${fName}_oscad.stl refs/${dName}/${fName}.scad`);
+	//rCmd.push(`openscad -o refs/${dName}/${fName}_oscad.stl refs/${dName}/${fName}.scad`);
 	// JsCAD
-	//rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.js write js_3d_openjscad`);
+	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.js write js_3d_openjscad`);
 	//rCmd.push(`cd refs && npx jscad ${dName}/${fName}.js -o ${dName}/${fName}_jscad.stl`);
 	// FreeCAD
-	//rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.py write py_3d_freecad`);
+	rCmd.push(`npx designix-cli -d=heliostat/${desiName} -p=refs/${dName}/px_${fName}.json -o=refs/${dName} --outFileName=${fName}.py write py_3d_freecad`);
 	//rCmd.push(`freecad.cmd refs/${dName}/${fName}.py refs/${dName}/${fName}_fc`);
 	//rCmd.push(`npx rimraf refs/${dName}`);
 	return rCmd
