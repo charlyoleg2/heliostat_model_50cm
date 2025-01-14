@@ -640,25 +640,25 @@ module subpax_rake_disc () {
 
 module subpax_rake_wing_right () {
 	translate( [ 0, 33.99098616358617, 22.471651241037186 ])
-		rotate( [ -36.07102579213357, 0, 0 ])
+		rotate( [ -36.071025792133575, 0, 0 ])
 			   linear_extrude(height = 182.45023511595764) polygon(a_rake_faceWing, b_rake_faceWing);
 }
 
 module subpax_rake_wing_left () {
 	translate( [ 0, -33.99098616358617, 22.471651241037186 ])
-		rotate( [ 36.07102579213357, 0, 0 ])
+		rotate( [ 36.071025792133575, 0, 0 ])
 			   linear_extrude(height = 182.45023511595764) polygon(a_rake_faceWing, b_rake_faceWing);
 }
 
 module subpax_rake_wing_hollow_right () {
 	translate( [ 0, 33.99098616358617, 22.471651241037186 ])
-		rotate( [ -36.07102579213357, 0, 0 ])
+		rotate( [ -36.071025792133575, 0, 0 ])
 			   linear_extrude(height = 182.45023511595764) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
 }
 
 module subpax_rake_wing_hollow_left () {
 	translate( [ 0, -33.99098616358617, 22.471651241037186 ])
-		rotate( [ 36.07102579213357, 0, 0 ])
+		rotate( [ 36.071025792133575, 0, 0 ])
 			   linear_extrude(height = 182.45023511595764) polygon(a_rake_faceWingHollow, b_rake_faceWingHollow);
 }
 

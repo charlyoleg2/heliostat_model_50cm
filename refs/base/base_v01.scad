@@ -146,7 +146,7 @@ module subpax_base_hollow_8 () {
 
 module subpax_base_hollow_9 () {
 	translate( [ 0, 0, 0 ])
-		rotate( [ 90, 0, 202.5 ])
+		rotate( [ 90, 0, 202.49999999999997 ])
 			   linear_extrude(height = 51) polygon(a_base_faceHollow, b_base_faceHollow);
 }
 
@@ -170,7 +170,7 @@ module subpax_base_hollow_12 () {
 
 module subpax_base_hollow_13 () {
 	translate( [ 0, 0, 0 ])
-		rotate( [ 90, 0, 292.5 ])
+		rotate( [ 90, 0, 292.50000000000006 ])
 			   linear_extrude(height = 51) polygon(a_base_faceHollow, b_base_faceHollow);
 }
 

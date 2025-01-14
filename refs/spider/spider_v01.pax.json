@@ -1,0 +1,558 @@
+{
+  "partName": "spider",
+  "pDef": {
+    "partName": "spider",
+    "params": [
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 400,
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 400,
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L3",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L4",
+        "unit": "mm",
+        "init": 3000,
+        "min": 10,
+        "max": 8000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "longitude",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "L5",
+        "unit": "mm",
+        "init": 2000,
+        "min": 1,
+        "max": 8000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N1",
+        "unit": "",
+        "init": 6,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L6",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "thickness",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "E1",
+        "unit": "mm",
+        "init": 3,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E2",
+        "unit": "mm",
+        "init": 50,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E3",
+        "unit": "mm",
+        "init": 3,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R2",
+        "unit": "mm",
+        "init": 100,
+        "min": 0,
+        "max": 400,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "D1": "spider_profile.svg",
+      "L1": "spider_profile.svg",
+      "L2": "spider_profile.svg",
+      "L3": "spider_profile.svg",
+      "L4": "spider_profile.svg",
+      "L5": "spider_lateral.svg",
+      "L6": "spider_lateral.svg",
+      "E1": "spider_profile.svg",
+      "E2": "spider_profile.svg",
+      "E3": "spider_profile.svg",
+      "R2": "spider_profile.svg",
+      "N1": "spider_lateral.svg"
+    },
+    "sim": {
+      "tMax": 360,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "D1": 6,
+    "L1": 8,
+    "L2": 20,
+    "L3": 10,
+    "L4": 80,
+    "longitude": 0,
+    "L5": 38.4,
+    "N1": 6,
+    "L6": 0.64,
+    "thickness": 0,
+    "E1": 2,
+    "E2": 5,
+    "E3": 2,
+    "R2": 0
+  },
+  "figures": {
+    "faceLegs": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 2.5,
+              "py": -1.6583123951777
+            },
+            {
+              "typ": 1,
+              "px": 2.5000000000000004,
+              "py": -8
+            },
+            {
+              "typ": 1,
+              "px": 34.21320343559643,
+              "py": -8
+            },
+            {
+              "typ": 2,
+              "px": 37.748737341529164,
+              "py": -9.464466094067262,
+              "radius": 5,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 70.71067811865476,
+              "py": -42.426406871192846
+            },
+            {
+              "typ": 1,
+              "px": 67.17514421272202,
+              "py": -45.96194077712558
+            },
+            {
+              "typ": 1,
+              "px": 34.21320343559643,
+              "py": -13
+            },
+            {
+              "typ": 1,
+              "px": -34.21320343559643,
+              "py": -13.000000000000002
+            },
+            {
+              "typ": 1,
+              "px": -67.175144212722,
+              "py": -45.9619407771256
+            },
+            {
+              "typ": 1,
+              "px": -70.71067811865476,
+              "py": -42.42640687119286
+            },
+            {
+              "typ": 1,
+              "px": -37.748737341529164,
+              "py": -9.464466094067266
+            },
+            {
+              "typ": 2,
+              "px": -34.21320343559643,
+              "py": -8.000000000000007,
+              "radius": 5,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -2.5000000000000013,
+              "py": -8
+            },
+            {
+              "typ": 1,
+              "px": -2.5,
+              "py": -1.6583123951777003
+            },
+            {
+              "typ": 2,
+              "px": 2.5,
+              "py": -1.6583123951777,
+              "radius": 3,
+              "large": true,
+              "ccw": false
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 1
+        }
+      ]
+    ],
+    "faceTube": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 3
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 1
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 72.47844507162112,
+              "py": -40.658639918226484
+            },
+            {
+              "typ": 1,
+              "px": 79.5495128834866,
+              "py": -47.72970773009195
+            },
+            {
+              "typ": 1,
+              "px": 72.47844507162112,
+              "py": -54.80077554195743
+            },
+            {
+              "typ": 1,
+              "px": 65.40737725975565,
+              "py": -47.72970773009196
+            },
+            {
+              "typ": 1,
+              "px": 72.47844507162112,
+              "py": -40.658639918226484
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 72.47844507162112,
+              "py": -43.48706704297267
+            },
+            {
+              "typ": 1,
+              "px": 76.72108575874041,
+              "py": -47.72970773009195
+            },
+            {
+              "typ": 1,
+              "px": 72.47844507162112,
+              "py": -51.97234841721123
+            },
+            {
+              "typ": 1,
+              "px": 68.23580438450183,
+              "py": -47.729707730091945
+            },
+            {
+              "typ": 1,
+              "px": 72.47844507162112,
+              "py": -43.48706704297267
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -72.47844507162111,
+              "py": -40.65863991822649
+            },
+            {
+              "typ": 1,
+              "px": -65.40737725975565,
+              "py": -47.72970773009196
+            },
+            {
+              "typ": 1,
+              "px": -72.47844507162114,
+              "py": -54.800775541957414
+            },
+            {
+              "typ": 1,
+              "px": -79.5495128834866,
+              "py": -47.72970773009197
+            },
+            {
+              "typ": 1,
+              "px": -72.47844507162111,
+              "py": -40.65863991822649
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -72.47844507162112,
+              "py": -43.487067042972676
+            },
+            {
+              "typ": 1,
+              "px": -68.23580438450182,
+              "py": -47.72970773009197
+            },
+            {
+              "typ": 1,
+              "px": -72.47844507162112,
+              "py": -51.97234841721123
+            },
+            {
+              "typ": 1,
+              "px": -76.72108575874043,
+              "py": -47.72970773009194
+            },
+            {
+              "typ": 1,
+              "px": -72.47844507162112,
+              "py": -43.487067042972676
+            }
+          ]
+        }
+      ]
+    ],
+    "faceBody": []
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_spider_tube",
+        "face": "spider_faceTube",
+        "extrudeMethod": 0,
+        "length": 38.4,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_0",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_1",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          7.552
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_2",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          15.104
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_3",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          22.656
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_4",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          30.208
+        ]
+      },
+      {
+        "outName": "subpax_spider_leg_5",
+        "face": "spider_faceLegs",
+        "extrudeMethod": 0,
+        "length": 0.64,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          37.76
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_spider",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_spider_tube",
+          "subpax_spider_leg_0",
+          "subpax_spider_leg_1",
+          "subpax_spider_leg_2",
+          "subpax_spider_leg_3",
+          "subpax_spider_leg_4",
+          "subpax_spider_leg_5"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "spider simTime: 0\nspide leg number: 6\nspide position angle: 0.00 degree\nheliostat-spider drawn successfully!\n"
+}

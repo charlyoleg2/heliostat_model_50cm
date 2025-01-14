@@ -1,0 +1,649 @@
+{
+  "partName": "ring_guidance",
+  "pDef": {
+    "partName": "ring_guidance",
+    "params": [
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 700,
+        "min": 5,
+        "max": 2500,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N1",
+        "unit": "legs",
+        "init": 6,
+        "min": 1,
+        "max": 24,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D2",
+        "unit": "mm",
+        "init": 600,
+        "min": 5,
+        "max": 2000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "leg details",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "D3",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D4",
+        "unit": "mm",
+        "init": 50,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 90,
+        "min": 1,
+        "max": 900,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R5",
+        "unit": "mm",
+        "init": 20,
+        "min": 0,
+        "max": 500,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "inner",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "D6",
+        "unit": "mm",
+        "init": 300,
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N2",
+        "unit": "motors",
+        "init": 8,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 50,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D7",
+        "unit": "mm",
+        "init": 80,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "thickness",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "T1",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "D1": "ring_guidance_top.svg",
+      "D2": "ring_guidance_top.svg",
+      "D3": "ring_guidance_top.svg",
+      "D4": "ring_guidance_top.svg",
+      "R5": "ring_guidance_top.svg",
+      "D6": "ring_guidance_top.svg",
+      "D7": "ring_guidance_top.svg",
+      "N1": "ring_guidance_top.svg",
+      "N2": "ring_guidance_top.svg",
+      "L1": "ring_guidance_top.svg",
+      "L2": "ring_guidance_top.svg",
+      "T1": "ring_guidance_top.svg"
+    },
+    "sim": {
+      "tMax": 100,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "D1": 64,
+    "N1": 6,
+    "D2": 52,
+    "leg details": 0,
+    "D3": 2,
+    "D4": 4,
+    "L1": 8,
+    "R5": 4,
+    "inner": 0,
+    "D6": 30,
+    "N2": 8,
+    "L2": 3,
+    "D7": 4,
+    "thickness": 0,
+    "T1": 2
+  },
+  "figures": {
+    "faceTop": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 27.980021254057945,
+              "py": -3.3067903729967174
+            },
+            {
+              "typ": 1,
+              "px": 32.5795589691525,
+              "py": -1.9141868773123718
+            },
+            {
+              "typ": 2,
+              "px": 32.5795589691525,
+              "py": 1.914186877312371,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 27.980021254057977,
+              "py": 3.3067903729966845
+            },
+            {
+              "typ": 2,
+              "px": 25.253920633381252,
+              "py": 6.183808910605235,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": 17.98229592542335,
+              "py": 18.778632358361538,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 16.853775095033942,
+              "py": 22.57801401794437,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 17.947513947919578,
+              "py": 27.257632272723036
+            },
+            {
+              "typ": 2,
+              "px": 14.63204502123294,
+              "py": 29.171819150035407,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 11.12624615902405,
+              "py": 25.884804390941078
+            },
+            {
+              "typ": 2,
+              "px": 7.271624707957928,
+              "py": 24.96244126896678,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": -7.271624707957902,
+              "py": 24.962441268966785,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -11.12624615902402,
+              "py": 25.884804390941074,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -14.63204502123292,
+              "py": 29.171819150035418
+            },
+            {
+              "typ": 2,
+              "px": -17.94751394791956,
+              "py": 27.257632272723043,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -16.853775095033928,
+              "py": 22.57801401794439
+            },
+            {
+              "typ": 2,
+              "px": -17.98229592542333,
+              "py": 18.77863235836155,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": -25.253920633381245,
+              "py": 6.1838089106052445,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -27.980021254057966,
+              "py": 3.3067903729966948,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -32.5795589691525,
+              "py": 1.9141868773123794
+            },
+            {
+              "typ": 2,
+              "px": -32.5795589691525,
+              "py": -1.9141868773123627,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -27.980021254057977,
+              "py": -3.306790372996677
+            },
+            {
+              "typ": 2,
+              "px": -25.253920633381252,
+              "py": -6.183808910605227,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": -17.982295925423344,
+              "py": -18.77863235836154,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -16.85377509503395,
+              "py": -22.57801401794439,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -17.94751394791958,
+              "py": -27.25763227272303
+            },
+            {
+              "typ": 2,
+              "px": -14.632045021232944,
+              "py": -29.171819150035404,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -11.126246159024056,
+              "py": -25.884804390941078
+            },
+            {
+              "typ": 2,
+              "px": -7.2716247079579315,
+              "py": -24.96244126896678,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": 7.271624707957892,
+              "py": -24.962441268966796,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 11.12624615902401,
+              "py": -25.884804390941078,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 14.63204502123291,
+              "py": -29.171819150035425
+            },
+            {
+              "typ": 2,
+              "px": 17.947513947919553,
+              "py": -27.257632272723054,
+              "radius": 1.9999999999999993,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 16.85377509503392,
+              "py": -22.5780140179444
+            },
+            {
+              "typ": 2,
+              "px": 17.98229592542333,
+              "py": -18.778632358361556,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 2,
+              "px": 25.253920633381252,
+              "py": -6.183808910605263,
+              "radius": 26.000000000000007,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 27.980021254057945,
+              "py": -3.3067903729967174,
+              "radius": 4,
+              "large": false,
+              "ccw": false
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 15
+        },
+        {
+          "circle": true,
+          "cx": 18,
+          "cy": 0,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": 12.727922061357857,
+          "cy": 12.727922061357855,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": 1.102182119232618e-15,
+          "cy": 18,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": -12.727922061357855,
+          "cy": 12.727922061357857,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": -18,
+          "cy": 2.204364238465236e-15,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": -12.727922061357859,
+          "cy": -12.727922061357855,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": -3.3065463576978533e-15,
+          "cy": -18,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": 12.727922061357852,
+          "cy": -12.727922061357859,
+          "radius": 2
+        },
+        {
+          "circle": true,
+          "cx": 32,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 16.000000000000004,
+          "cy": 27.712812921102035,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -15.999999999999993,
+          "cy": 27.71281292110204,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -32,
+          "cy": 3.91886975727153e-15,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -16.000000000000014,
+          "cy": -27.71281292110203,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 15.999999999999979,
+          "cy": -27.71281292110205,
+          "radius": 1
+        }
+      ]
+    ],
+    "faceSection": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 15,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 34,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 34,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 15,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 15,
+              "py": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -34,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": -15,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": -15,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": -34,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": -34,
+              "py": 0
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_ring_guidance_top",
+        "face": "ring_guidance_faceTop",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_ring_guidance",
+        "boolMethod": 0,
+        "inList": [
+          "subpax_ring_guidance_top"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "ring_guidance simTime: 0\nring_guidance: Dmax 68.00 mm\nring_guidance drawn successfully!\n"
+}

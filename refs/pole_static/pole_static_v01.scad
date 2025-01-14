@@ -234,7 +234,7 @@ module subpax_vaxis_holderB2_b2_4 () {
 
 module subpax_vaxis_holderB2_b2_5 () {
 	translate( [ 0.866025403784439, 0.49999999999999933, 0 ])
-		rotate( [ 90, 0, -60.00000000000004 ])
+		rotate( [ 90, 0, -60.00000000000005 ])
 			   linear_extrude(height = 2) polygon(a_vaxis_holderB2_faceButtress12, b_vaxis_holderB2_faceButtress12);
 }
 
@@ -329,7 +329,7 @@ module subpax_vaxis_holderB1_b2_4 () {
 
 module subpax_vaxis_holderB1_b2_5 () {
 	translate( [ 0.866025403784439, 0.49999999999999933, 0 ])
-		rotate( [ 90, 0, -60.00000000000004 ])
+		rotate( [ 90, 0, -60.00000000000005 ])
 			   linear_extrude(height = 2) polygon(a_vaxis_holderB1_faceButtress12, b_vaxis_holderB1_faceButtress12);
 }
 
@@ -424,7 +424,7 @@ module subpax_vaxis_holderA_b2_4 () {
 
 module subpax_vaxis_holderA_b2_5 () {
 	translate( [ 0.866025403784439, 0.49999999999999933, 0 ])
-		rotate( [ 90, 0, -60.00000000000004 ])
+		rotate( [ 90, 0, -60.00000000000005 ])
 			   linear_extrude(height = 2) polygon(a_vaxis_holderA_faceButtress12, b_vaxis_holderA_faceButtress12);
 }
 

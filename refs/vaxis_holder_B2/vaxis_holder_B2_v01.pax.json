@@ -1,0 +1,850 @@
+{
+  "partName": "vaxis_holder",
+  "pDef": {
+    "partName": "vaxis_holder",
+    "params": [
+      {
+        "name": "PHD1",
+        "unit": "mm",
+        "init": 700,
+        "min": 1,
+        "max": 2000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHD2",
+        "unit": "mm",
+        "init": 900,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHD5",
+        "unit": "mm",
+        "init": 800,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHN1",
+        "unit": "holes",
+        "init": 6,
+        "min": 1,
+        "max": 24,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "screw holes",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "PHD3",
+        "unit": "mm",
+        "init": 40,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHR4",
+        "unit": "mm",
+        "init": 40,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHL2",
+        "unit": "mm",
+        "init": 120,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHR6",
+        "unit": "mm",
+        "init": 20,
+        "min": 0,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "section",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "PHE1",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHH1",
+        "unit": "mm",
+        "init": 50,
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHA",
+        "unit": "degree",
+        "init": 5,
+        "min": -45,
+        "max": 45,
+        "step": 0.1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHL1",
+        "unit": "mm",
+        "init": 300,
+        "min": 1,
+        "max": 500,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHE2",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "PHE3",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "for reuse",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "withOuterCone",
+        "unit": "checkbox",
+        "init": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "dropdown": [],
+        "pType": 1
+      }
+    ],
+    "paramSvg": {
+      "PHD1": "vaxis_holder_top.svg",
+      "PHD2": "vaxis_holder_top.svg",
+      "PHD5": "vaxis_holder_top.svg",
+      "PHD3": "vaxis_holder_top.svg",
+      "PHR4": "vaxis_holder_top.svg",
+      "PHN1": "vaxis_holder_top.svg",
+      "PHL2": "vaxis_holder_top.svg",
+      "PHR6": "vaxis_holder_top.svg",
+      "PHE1": "vaxis_holder_section.svg",
+      "PHH1": "vaxis_holder_section.svg",
+      "PHA": "vaxis_holder_section.svg",
+      "PHL1": "vaxis_holder_section.svg",
+      "PHE2": "vaxis_holder_section.svg",
+      "PHE3": "vaxis_holder_top.svg",
+      "withOuterCone": "vaxis_holder_section.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "PHD1": 54,
+    "PHD2": 70,
+    "PHD5": 62,
+    "PHN1": 6,
+    "screw holes": 0,
+    "PHD3": 2,
+    "PHR4": 2,
+    "PHL2": 8,
+    "PHR6": 2,
+    "section": 0,
+    "PHE1": 2,
+    "PHH1": 5,
+    "PHA": 1.5,
+    "PHL1": 20,
+    "PHE2": 2,
+    "PHE3": 2,
+    "for reuse": 0,
+    "withOuterCone": 1
+  },
+  "figures": {
+    "facePetal": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 32.973128493449074
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 29.39741423713227,
+              "py": -3.3592573202016895
+            },
+            {
+              "typ": 1,
+              "px": 26.139026415317154,
+              "py": -1.8051937531684423
+            },
+            {
+              "typ": 2,
+              "px": 26.139026415317154,
+              "py": 1.8051937531684423,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 29.39741423713224,
+              "py": 3.359257320201681
+            },
+            {
+              "typ": 2,
+              "px": 30.504471042273487,
+              "py": 5.520620112912889,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 20.033232783562628,
+              "py": 23.657336795159168,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 17.607909295709614,
+              "py": 23.77927887483001,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 14.632856856655431,
+              "py": 21.73446402927292
+            },
+            {
+              "typ": 2,
+              "px": 11.50616955866174,
+              "py": 23.539657782441363,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 11.789504941422635,
+              "py": 27.138536195031687
+            },
+            {
+              "typ": 2,
+              "px": 10.471238258710876,
+              "py": 29.17795690807205,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -10.471238258710859,
+              "py": 29.177956908072055,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -11.789504941422619,
+              "py": 27.13853619503169,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -11.506169558661727,
+              "py": 23.539657782441374
+            },
+            {
+              "typ": 2,
+              "px": -14.632856856655415,
+              "py": 21.73446402927293,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -17.607909295709604,
+              "py": 23.77927887483002
+            },
+            {
+              "typ": 2,
+              "px": -20.033232783562617,
+              "py": 23.657336795159175,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -30.504471042273483,
+              "py": 5.520620112912915,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -29.39741423713224,
+              "py": 3.3592573202016998,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -26.139026415317154,
+              "py": 1.8051937531684623
+            },
+            {
+              "typ": 2,
+              "px": -26.139026415317154,
+              "py": -1.8051937531684206,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -29.397414237132242,
+              "py": -3.3592573202016567
+            },
+            {
+              "typ": 2,
+              "px": -30.504471042273487,
+              "py": -5.520620112912869,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -20.033232783562628,
+              "py": -23.657336795159154,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": -17.607909295709618,
+              "py": -23.77927887483,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -14.632856856655428,
+              "py": -21.73446402927291
+            },
+            {
+              "typ": 2,
+              "px": -11.506169558661718,
+              "py": -23.539657782441367,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -11.789504941422617,
+              "py": -27.138536195031687
+            },
+            {
+              "typ": 2,
+              "px": -10.471238258710859,
+              "py": -29.17795690807205,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 10.471238258710878,
+              "py": -29.17795690807206,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 11.789504941422637,
+              "py": -27.138536195031694,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 11.506169558661743,
+              "py": -23.539657782441374
+            },
+            {
+              "typ": 2,
+              "px": 14.632856856655456,
+              "py": -21.73446402927292,
+              "radius": 2.0000000000000053,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 17.607909295709636,
+              "py": -23.77927887483001
+            },
+            {
+              "typ": 2,
+              "px": 20.03323278356265,
+              "py": -23.657336795159168,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 30.50447104227352,
+              "py": -5.5206201129129004,
+              "radius": 30.99999999999996,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 2,
+              "px": 29.39741423713227,
+              "py": -3.3592573202016895,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 27,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 13.500000000000004,
+          "cy": 23.38268590217984,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -13.499999999999995,
+          "cy": 23.382685902179844,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -27,
+          "cy": 3.3065463576978537e-15,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -13.500000000000012,
+          "cy": -23.38268590217984,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 13.499999999999982,
+          "cy": -23.382685902179855,
+          "radius": 1
+        }
+      ]
+    ],
+    "faceOuter": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 32.01275016829372,
+              "py": -1
+            },
+            {
+              "typ": 1,
+              "px": 33.02550033658745,
+              "py": -1
+            },
+            {
+              "typ": 1,
+              "px": 33.26108389809699,
+              "py": -9.996573249755572
+            },
+            {
+              "typ": 1,
+              "px": 35.26039854804811,
+              "py": -9.944219353139827
+            },
+            {
+              "typ": 1,
+              "px": 34.73685958189065,
+              "py": 10.048927146371318
+            },
+            {
+              "typ": 1,
+              "px": 32.73754493193953,
+              "py": 9.99657324975557
+            },
+            {
+              "typ": 1,
+              "px": 32.973128493449074,
+              "py": 0.9999999999999982
+            },
+            {
+              "typ": 1,
+              "px": 32.01275016829372,
+              "py": 1
+            },
+            {
+              "typ": 1,
+              "px": 32.01275016829372,
+              "py": -1
+            }
+          ]
+        }
+      ]
+    ],
+    "faceButtress1": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 29,
+              "py": -1
+            },
+            {
+              "typ": 1,
+              "px": 33.02550033658745,
+              "py": -1
+            },
+            {
+              "typ": 1,
+              "px": 33.26108389809699,
+              "py": -9.996573249755572
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": -1
+            }
+          ]
+        }
+      ]
+    ],
+    "faceButtress2": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 29,
+              "py": 1
+            },
+            {
+              "typ": 1,
+              "px": 32.973128493449074,
+              "py": 1
+            },
+            {
+              "typ": 1,
+              "px": 32.73754493193953,
+              "py": 9.996573249755572
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": 6
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "faceButtress12": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 34,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 32.73754493193953,
+              "py": 9.996573249755572
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": 6
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": 1
+            },
+            {
+              "typ": 1,
+              "px": 29,
+              "py": -1
+            },
+            {
+              "typ": 1,
+              "px": 33.26108389809699,
+              "py": -9.996573249755572
+            },
+            {
+              "typ": 1,
+              "px": 34,
+              "py": 0
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_vaxis_holder_outer",
+        "face": "vaxis_holder_faceOuter",
+        "extrudeMethod": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_petal",
+        "face": "vaxis_holder_facePetal",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_0",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_1",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          1.0471975511965976
+        ],
+        "translate": [
+          -0.8660254037844386,
+          0.5000000000000001,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_2",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          2.0943951023931957
+        ],
+        "translate": [
+          -0.8660254037844387,
+          -0.4999999999999998,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_3",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          3.141592653589793
+        ],
+        "translate": [
+          -1.2246467991473532e-16,
+          -1,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_4",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          -2.094395102393196
+        ],
+        "translate": [
+          0.8660254037844385,
+          -0.5000000000000004,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_holder_b2_5",
+        "face": "vaxis_holder_faceButtress12",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          -1.0471975511965985
+        ],
+        "translate": [
+          0.866025403784439,
+          0.49999999999999933,
+          0
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_vaxis_holder",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_vaxis_holder_petal",
+          "subpax_vaxis_holder_outer",
+          "subpax_vaxis_holder_b2_0",
+          "subpax_vaxis_holder_b2_1",
+          "subpax_vaxis_holder_b2_2",
+          "subpax_vaxis_holder_b2_3",
+          "subpax_vaxis_holder_b2_4",
+          "subpax_vaxis_holder_b2_5"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "vaxis_holder simTime: 0\nvaxis_holder's height: 19.99 mm\nvaxis_holder outerD1: 70.52 mm\nvaxis_holder outerD2: 69.48 mm\nvaxis_holder innerD: 50.00 mm\nvaxis_holder D2-next: 66.00 mm\npetal angle: 14.83 degree\nhollow angle: 45.17 degree\nvaxis_holder drawn successfully!\n"
+}

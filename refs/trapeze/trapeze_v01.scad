@@ -96,49 +96,49 @@ module subpax_trapeze_plate () {
 
 module subpax_trapeze_rod1 () {
 	translate( [ 11.199987307122505, 12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 63.434948822922 ])
+		rotate( [ 0, 45.465839874631044, 63.43494882292201 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRod, b_trapeze_faceRod);
 }
 
 module subpax_trapeze_rod2 () {
 	translate( [ -11.199987307122505, 12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 116.56505117707799 ])
+		rotate( [ 0, 45.465839874631044, 116.56505117707799 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRod, b_trapeze_faceRod);
 }
 
 module subpax_trapeze_rod3 () {
 	translate( [ -11.199987307122505, -12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 243.434948822922 ])
+		rotate( [ 0, 45.465839874631044, 243.43494882292202 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRod, b_trapeze_faceRod);
 }
 
 module subpax_trapeze_rod4 () {
 	translate( [ 11.199987307122505, -12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, -63.434948822922 ])
+		rotate( [ 0, 45.465839874631044, -63.43494882292201 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRod, b_trapeze_faceRod);
 }
 
 module subpax_trapeze_rodH1 () {
 	translate( [ 11.199987307122505, 12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 63.434948822922 ])
+		rotate( [ 0, 45.465839874631044, 63.43494882292201 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRodHollow, b_trapeze_faceRodHollow);
 }
 
 module subpax_trapeze_rodH2 () {
 	translate( [ -11.199987307122505, 12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 116.56505117707799 ])
+		rotate( [ 0, 45.465839874631044, 116.56505117707799 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRodHollow, b_trapeze_faceRodHollow);
 }
 
 module subpax_trapeze_rodH3 () {
 	translate( [ -11.199987307122505, -12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, 243.434948822922 ])
+		rotate( [ 0, 45.465839874631044, 243.43494882292202 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRodHollow, b_trapeze_faceRodHollow);
 }
 
 module subpax_trapeze_rodH4 () {
 	translate( [ 11.199987307122505, -12.985761051871918, -1.564162178201257 ])
-		rotate( [ 0, 45.46583987463105, -63.434948822922 ])
+		rotate( [ 0, 45.465839874631044, -63.43494882292201 ])
 			   linear_extrude(height = 60.00082232516408) polygon(a_trapeze_faceRodHollow, b_trapeze_faceRodHollow);
 }
 

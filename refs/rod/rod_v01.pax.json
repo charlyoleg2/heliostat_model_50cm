@@ -1,0 +1,1209 @@
+{
+  "partName": "rod",
+  "pDef": {
+    "partName": "rod",
+    "params": [
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 10000,
+        "min": 100,
+        "max": 40000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 100,
+        "min": 2,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L3",
+        "unit": "mm",
+        "init": 400,
+        "min": 10,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L4",
+        "unit": "mm",
+        "init": 600,
+        "min": 10,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N1",
+        "unit": "",
+        "init": 10,
+        "min": 2,
+        "max": 50,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "section",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "H1",
+        "unit": "mm",
+        "init": 200,
+        "min": 5,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E1",
+        "unit": "mm",
+        "init": 2,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E2",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "pad",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "N3",
+        "unit": "",
+        "init": 2,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N4",
+        "unit": "",
+        "init": 4,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R3",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 500,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D2",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L7",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 300,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "L1": "rod_top.svg",
+      "L2": "rod_top.svg",
+      "L3": "rod_top.svg",
+      "L4": "rod_top.svg",
+      "H1": "rod_cut.svg",
+      "E1": "rod_cut.svg",
+      "E2": "rod_cut.svg",
+      "N1": "rod_top.svg",
+      "N3": "rod_top.svg",
+      "N4": "rod_top.svg",
+      "R3": "rod_top.svg",
+      "D2": "rod_plate.svg",
+      "L7": "rod_plate.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "L1": 346,
+    "L2": 8,
+    "L3": 30,
+    "L4": 40,
+    "N1": 7,
+    "section": 0,
+    "H1": 12,
+    "E1": 2,
+    "E2": 2,
+    "pad": 0,
+    "N3": 2,
+    "N4": 2,
+    "R3": 2,
+    "D2": 3,
+    "L7": 3
+  },
+  "figures": {
+    "faceCut": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 4,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 4,
+              "py": 12
+            },
+            {
+              "typ": 1,
+              "px": -4,
+              "py": 12
+            },
+            {
+              "typ": 1,
+              "px": -4,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 4,
+              "py": 0
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 2,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 2,
+              "py": 10
+            },
+            {
+              "typ": 1,
+              "px": -2,
+              "py": 10
+            },
+            {
+              "typ": 1,
+              "px": -2,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 2,
+              "py": 2
+            }
+          ]
+        }
+      ]
+    ],
+    "facePlate": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 2.0000000000000004
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 28
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 30,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 30
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 28,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 2.0000000000000004
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 0,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 2.449293598294707e-16
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 2.0000000000000004,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 10,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 10,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 20,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 20,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 3,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 27,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 3,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 27,
+          "radius": 1.5
+        }
+      ]
+    ],
+    "faceTop": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 2.0000000000000004
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 28
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 30,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 30
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 28,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 2.0000000000000004
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 0,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 2.449293598294707e-16
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 2.0000000000000004,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 10,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 10,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 20,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 20,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 3,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 27,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 3,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 27,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 54.666666666666664
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 80.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 82.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 82.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 80.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 54.666666666666664
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 52.666666666666664,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 52.666666666666664
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 54.666666666666664,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 62.666666666666664,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 62.666666666666664,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 72.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 72.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 55.666666666666664,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 79.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 55.666666666666664,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 79.66666666666666,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 107.33333333333333
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 133.33333333333331
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 135.33333333333331,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 135.33333333333331
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 133.33333333333331,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 107.33333333333333
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 105.33333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 105.33333333333333
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 107.33333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 115.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 115.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 125.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 125.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 108.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 132.33333333333331,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 108.33333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 132.33333333333331,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 186
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 188,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 188
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 186,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 160
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 158,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 158
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 160,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 168,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 168,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 178,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 178,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 161,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 185,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 161,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 185,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 212.66666666666666
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 238.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 240.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 240.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 238.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 212.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 210.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 210.66666666666666
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 212.66666666666666,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 220.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 220.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 230.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 230.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 213.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 237.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 213.66666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 237.66666666666666,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 265.3333333333333
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 291.3333333333333
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 293.3333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 293.3333333333333
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 291.3333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 265.3333333333333
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 263.3333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 263.3333333333333
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 265.3333333333333,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 273.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 273.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 283.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 283.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 266.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 290.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 266.3333333333333,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 290.3333333333333,
+          "radius": 1.5
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 20,
+              "py": 318
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 344
+            },
+            {
+              "typ": 2,
+              "px": 18,
+              "py": 346,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -18,
+              "py": 346
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 344,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": 318
+            },
+            {
+              "typ": 2,
+              "px": -18,
+              "py": 316,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 18,
+              "py": 316
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": 318,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 326,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 326,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 17,
+          "cy": 336,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -17,
+          "cy": 336,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 319,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -6.666666666666666,
+          "cy": 343,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 319,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 6.666666666666668,
+          "cy": 343,
+          "radius": 1.5
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_rod_rod",
+        "face": "rod_faceCut",
+        "extrudeMethod": 0,
+        "length": 346,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_rod_plates",
+        "face": "rod_faceTop",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          14,
+          0
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_rod",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_rod_rod",
+          "subpax_rod_plates"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "rod simTime: 0\nrod-length: 346.00 mm\nspace-length: 52.67 mm\nheliostat-rod drawn successfully!\n"
+}

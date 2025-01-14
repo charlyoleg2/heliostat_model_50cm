@@ -1,0 +1,1981 @@
+{
+  "partName": "swing",
+  "pDef": {
+    "partName": "swing",
+    "params": [
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 12500,
+        "min": 100,
+        "max": 40000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 6000,
+        "min": 100,
+        "max": 40000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "radial",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 400,
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E1",
+        "unit": "mm",
+        "init": 5,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H2",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H4",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E2",
+        "unit": "mm",
+        "init": 3,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L3",
+        "unit": "mm",
+        "init": 500,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "longitudinal",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "L4",
+        "unit": "mm",
+        "init": 600,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L5",
+        "unit": "mm",
+        "init": 2000,
+        "min": 1,
+        "max": 10000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L6",
+        "unit": "mm",
+        "init": 2000,
+        "min": 1,
+        "max": 10000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H1",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H3",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E3",
+        "unit": "mm",
+        "init": 3,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "buttress",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "S1",
+        "unit": "mm",
+        "init": 300,
+        "min": 0,
+        "max": 3000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "S2",
+        "unit": "mm",
+        "init": 10,
+        "min": 0,
+        "max": 2000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R2",
+        "unit": "mm",
+        "init": 100,
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "rod overlay",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "rod1",
+        "unit": "",
+        "init": 10,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "rod2",
+        "unit": "mm",
+        "init": 1300,
+        "min": 10,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "rod3",
+        "unit": "mm",
+        "init": 400,
+        "min": 10,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "rod4",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "L1": "swing_top.svg",
+      "L2": "swing_top.svg",
+      "L3": "swing_top.svg",
+      "L4": "swing_top.svg",
+      "L5": "swing_top.svg",
+      "L6": "swing_top.svg",
+      "D1": "swing_top.svg",
+      "H1": "swing_top.svg",
+      "H2": "swing_top.svg",
+      "H3": "swing_side.svg",
+      "H4": "swing_side.svg",
+      "E1": "swing_side.svg",
+      "E2": "swing_side.svg",
+      "E3": "swing_face.svg",
+      "S1": "swing_buttress.svg",
+      "S2": "swing_buttress.svg",
+      "R2": "swing_buttress.svg",
+      "rod1": "swing_with_rod.svg",
+      "rod2": "swing_with_rod.svg",
+      "rod3": "swing_with_rod.svg",
+      "rod4": "swing_with_rod.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "L1": 340,
+    "L2": 320,
+    "radial": 0,
+    "D1": 20,
+    "E1": 2,
+    "H2": 8,
+    "H4": 10,
+    "E2": 2,
+    "L3": 80,
+    "longitudinal": 0,
+    "L4": 30,
+    "L5": 104,
+    "L6": 44,
+    "H1": 8,
+    "H3": 10,
+    "E3": 2,
+    "buttress": 0,
+    "S1": 50,
+    "S2": 7,
+    "R2": 5,
+    "rod overlay": 0,
+    "rod1": 5,
+    "rod2": 87,
+    "rod3": 40,
+    "rod4": 8
+  },
+  "figures": {
+    "faceSide": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 10
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 8
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -160,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": -152,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": -152,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -160,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -160,
+              "py": 7
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -158,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": -154,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": -154,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": -158,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": -158,
+              "py": 9
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -88,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -88,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -88,
+              "py": 7
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -86,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": -86,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": -86,
+              "py": 9
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 80,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": 88,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": 88,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 7
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 82,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": 86,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": 86,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": 9
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 152,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": 160,
+              "py": 7
+            },
+            {
+              "typ": 1,
+              "px": 160,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 152,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 152,
+              "py": 7
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 154,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": 158,
+              "py": 9
+            },
+            {
+              "typ": 1,
+              "px": 158,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": 154,
+              "py": 15
+            },
+            {
+              "typ": 1,
+              "px": 154,
+              "py": 9
+            }
+          ]
+        }
+      ]
+    ],
+    "faceFace": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -162,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -162,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -168,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -164,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -164,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -168,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -168,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 162,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 162,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 162,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 164,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 168,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 168,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 164,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 164,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -156,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -148,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -148,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -156,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -156,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -154,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -150,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -150,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -154,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -154,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -134,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -126,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -126,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -134,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -134,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -132,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -128,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -128,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -132,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -132,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -82,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -74,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -74,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -80,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -76,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -76,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -60,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -52,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -52,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -60,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -60,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -58,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -54,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -54,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -58,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -58,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 52,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 60,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 60,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 52,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 52,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 54,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 58,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 58,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 54,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 54,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 74,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 74,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 74,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 76,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 76,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 76,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 126,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 134,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 134,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 126,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 126,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 128,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 132,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 132,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 128,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 128,
+              "py": 19
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 148,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 156,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 156,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 148,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 148,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 150,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 154,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": 154,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 150,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 150,
+              "py": 19
+            }
+          ]
+        }
+      ]
+    ],
+    "faceTop": [],
+    "faceButtress": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -80,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": -51.325406178469066,
+              "py": 17
+            },
+            {
+              "typ": 2,
+              "px": -48.8486319456839,
+              "py": 16.343453625838713,
+              "radius": 5,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": -4.953548465570331,
+              "py": -8.686907251677424
+            },
+            {
+              "typ": 2,
+              "px": 4.953548465570331,
+              "py": -8.686907251677424,
+              "radius": 9.999999999999998,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 48.8486319456839,
+              "py": 16.343453625838713
+            },
+            {
+              "typ": 2,
+              "px": 51.325406178469066,
+              "py": 17,
+              "radius": 5,
+              "large": false,
+              "ccw": false
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 17
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 19
+            },
+            {
+              "typ": 1,
+              "px": -80,
+              "py": 17
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 8
+        }
+      ]
+    ],
+    "faceTopWithRods": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -162,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -162,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 162,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 162,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 162,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -156,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -148,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -148,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -156,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -156,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -134,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -126,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -126,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -134,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -134,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -82,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -74,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -74,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -82,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -60,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -52,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": -52,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -60,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -60,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 52,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 60,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 60,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 52,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 52,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 74,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 82,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 74,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 74,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 126,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 134,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 134,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 126,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 126,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 148,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 156,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 156,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 148,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": 148,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -160
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -152
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -152
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -160
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": -88
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -88
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -80
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -80
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -88
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": 80
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 80
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 88
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 88
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 80
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": 152
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 152
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 160
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 152
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -170,
+              "py": -10
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": -10
+            },
+            {
+              "typ": 1,
+              "px": 170,
+              "py": 10
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": 10
+            },
+            {
+              "typ": 1,
+              "px": -170,
+              "py": -10
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_swing_side",
+        "face": "swing_faceSide",
+        "extrudeMethod": 0,
+        "length": 340,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -170
+        ]
+      },
+      {
+        "outName": "subpax_swing_face",
+        "face": "swing_faceFace",
+        "extrudeMethod": 0,
+        "length": 320,
+        "rotate": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "translate": [
+          -160,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_0",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -170
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_1",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          162
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_2",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -156
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_3",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -134
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_4",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -82
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_5",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -60
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_6",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          52
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_7",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          74
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_8",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          126
+        ]
+      },
+      {
+        "outName": "subpax_swing_buttress_9",
+        "face": "swing_faceButtress",
+        "extrudeMethod": 0,
+        "length": 8,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          148
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_swing",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_swing_side",
+          "subpax_swing_face",
+          "subpax_swing_buttress_0",
+          "subpax_swing_buttress_1",
+          "subpax_swing_buttress_2",
+          "subpax_swing_buttress_3",
+          "subpax_swing_buttress_4",
+          "subpax_swing_buttress_5",
+          "subpax_swing_buttress_6",
+          "subpax_swing_buttress_7",
+          "subpax_swing_buttress_8",
+          "subpax_swing_buttress_9"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "swing simTime: 0\nswing size: L1 340.00 x L2 320.00 mm\nrake-L4: 14.00 mm (compare with rake)\nrake-L5: 120.00 mm (compare with rake)\nrake-L6: 60.00 mm (compare with rake)\nrake-beamL: (4*L4+L5+2*L6-2*H1) 296.00 mm (compare with rake)\nheliostat-swing drawn successfully!\n"
+}

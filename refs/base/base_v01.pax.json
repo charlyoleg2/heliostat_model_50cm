@@ -1,0 +1,856 @@
+{
+  "partName": "base",
+  "pDef": {
+    "partName": "base",
+    "params": [
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 600,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D2",
+        "unit": "mm",
+        "init": 700,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D3",
+        "unit": "mm",
+        "init": 400,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D4",
+        "unit": "mm",
+        "init": 500,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E1",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E2",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E3",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H1",
+        "unit": "mm",
+        "init": 800,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H2",
+        "unit": "mm",
+        "init": 50,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "side holes",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "H3",
+        "unit": "mm",
+        "init": 400,
+        "min": 10,
+        "max": 4000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N2",
+        "unit": "",
+        "init": 12,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "base holes",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "N1",
+        "unit": "",
+        "init": 24,
+        "min": 3,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D5",
+        "unit": "mm",
+        "init": 40,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 34,
+        "min": 1,
+        "max": 300,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "D1": "base_cut.svg",
+      "D2": "base_cut.svg",
+      "D3": "base_cut.svg",
+      "D4": "base_cut.svg",
+      "E1": "base_cut.svg",
+      "E2": "base_cut.svg",
+      "E3": "base_cut.svg",
+      "H1": "base_cut.svg",
+      "H2": "base_hollow.svg",
+      "H3": "base_hollow.svg",
+      "N2": "base_hollow.svg",
+      "L2": "base_hollow.svg",
+      "N1": "base_top.svg",
+      "D5": "base_top.svg",
+      "L1": "base_top.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "D1": 88,
+    "D2": 98,
+    "D3": 76,
+    "D4": 80,
+    "E1": 2,
+    "E2": 2,
+    "E3": 2,
+    "H1": 60,
+    "H2": 4,
+    "side holes": 0,
+    "H3": 30,
+    "N2": 16,
+    "L2": 10,
+    "base holes": 0,
+    "N1": 32,
+    "D5": 2,
+    "L1": 2
+  },
+  "figures": {
+    "faceCut": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 49,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 49,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 44,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 44,
+              "py": 60
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 60
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 2
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 49,
+              "py": 0
+            }
+          ]
+        }
+      ]
+    ],
+    "faceTop": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 44
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 38
+        },
+        {
+          "circle": true,
+          "cx": 40,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 39.23141121612922,
+          "cy": 7.8036128806451295,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 36.95518130045147,
+          "cy": 15.307337294603592,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 33.25878449210181,
+          "cy": 22.222809320784087,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 28.284271247461902,
+          "cy": 28.2842712474619,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 22.22280932078409,
+          "cy": 33.25878449210181,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 15.307337294603593,
+          "cy": 36.95518130045147,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 7.803612880645133,
+          "cy": 39.23141121612922,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 2.4492935982947065e-15,
+          "cy": 40,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -7.803612880645128,
+          "cy": 39.23141121612922,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -15.307337294603588,
+          "cy": 36.95518130045147,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -22.22280932078408,
+          "cy": 33.25878449210181,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -28.2842712474619,
+          "cy": 28.284271247461902,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -33.25878449210181,
+          "cy": 22.222809320784087,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -36.95518130045147,
+          "cy": 15.307337294603595,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -39.23141121612922,
+          "cy": 7.803612880645145,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -40,
+          "cy": 4.898587196589413e-15,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -39.23141121612922,
+          "cy": -7.803612880645135,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -36.95518130045147,
+          "cy": -15.307337294603586,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -33.25878449210182,
+          "cy": -22.22280932078408,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -28.28427124746191,
+          "cy": -28.2842712474619,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -22.222809320784087,
+          "cy": -33.25878449210181,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -15.307337294603613,
+          "cy": -36.95518130045146,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -7.803612880645146,
+          "cy": -39.23141121612921,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -7.347880794884118e-15,
+          "cy": -40,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 7.803612880645132,
+          "cy": -39.23141121612922,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 15.3073372946036,
+          "cy": -36.955181300451464,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 22.222809320784073,
+          "cy": -33.25878449210182,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 28.284271247461895,
+          "cy": -28.28427124746191,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 33.25878449210181,
+          "cy": -22.222809320784087,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 36.95518130045146,
+          "cy": -15.307337294603617,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 39.23141121612921,
+          "cy": -7.803612880645149,
+          "radius": 1
+        }
+      ]
+    ],
+    "faceHollow": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 5,
+              "py": 11
+            },
+            {
+              "typ": 1,
+              "px": 5,
+              "py": 31
+            },
+            {
+              "typ": 2,
+              "px": -5,
+              "py": 31,
+              "radius": 5,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -5,
+              "py": 11
+            },
+            {
+              "typ": 2,
+              "px": 5,
+              "py": 11,
+              "radius": 5,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_base_cut",
+        "face": "base_faceCut",
+        "extrudeMethod": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          1.5707963267948966,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_top",
+        "face": "base_faceTop",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          58
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_0",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_1",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          0.39269908169872414
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_2",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          0.7853981633974483
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_3",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          1.1780972450961724
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_4",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          1.5707963267948966
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_5",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          1.9634954084936207
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_6",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          2.356194490192345
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_7",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          2.748893571891069
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_8",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          3.141592653589793
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_9",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          3.5342917352885173
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_10",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          3.9269908169872414
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_11",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          4.319689898685965
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_12",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          4.71238898038469
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_13",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          5.105088062083414
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_14",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          5.497787143782138
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_base_hollow_15",
+        "face": "base_faceHollow",
+        "extrudeMethod": 0,
+        "length": 51,
+        "rotate": [
+          1.5707963267948966,
+          0,
+          5.890486225480862
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "ipax_base_hollows",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_base_hollow_0",
+          "subpax_base_hollow_1",
+          "subpax_base_hollow_2",
+          "subpax_base_hollow_3",
+          "subpax_base_hollow_4",
+          "subpax_base_hollow_5",
+          "subpax_base_hollow_6",
+          "subpax_base_hollow_7",
+          "subpax_base_hollow_8",
+          "subpax_base_hollow_9",
+          "subpax_base_hollow_10",
+          "subpax_base_hollow_11",
+          "subpax_base_hollow_12",
+          "subpax_base_hollow_13",
+          "subpax_base_hollow_14",
+          "subpax_base_hollow_15"
+        ]
+      },
+      {
+        "outName": "ipax_base_cylinder",
+        "boolMethod": 3,
+        "inList": [
+          "subpax_base_cut",
+          "ipax_base_hollows"
+        ]
+      },
+      {
+        "outName": "pax_base",
+        "boolMethod": 2,
+        "inList": [
+          "ipax_base_cylinder",
+          "subpax_base_top"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "base simTime: 0\nbase-height: 60.00 mm\nbase-external-diameter: 98.00 mm\ninter-hollow: 7.28 mm\nheliostat-base drawn successfully!\n"
+}

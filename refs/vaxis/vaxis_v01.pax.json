@@ -1,0 +1,384 @@
+{
+  "partName": "vaxis",
+  "pDef": {
+    "partName": "vaxis",
+    "params": [
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 600,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D2",
+        "unit": "mm",
+        "init": 400,
+        "min": 1,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H1",
+        "unit": "mm",
+        "init": 8000,
+        "min": 10,
+        "max": 40000,
+        "step": 10,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E1",
+        "unit": "mm",
+        "init": 5,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "E2",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "base holes",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "N1",
+        "unit": "",
+        "init": 24,
+        "min": 3,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D3",
+        "unit": "mm",
+        "init": 40,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 45,
+        "min": 1,
+        "max": 300,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "D1": "vaxis_cut.svg",
+      "D2": "vaxis_cut.svg",
+      "H1": "vaxis_cut.svg",
+      "E1": "vaxis_cut.svg",
+      "E2": "vaxis_cut.svg",
+      "N1": "vaxis_ends.svg",
+      "D3": "vaxis_ends.svg",
+      "L1": "vaxis_ends.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "D1": 34,
+    "D2": 22,
+    "H1": 198,
+    "E1": 2,
+    "E2": 2,
+    "base holes": 0,
+    "N1": 24,
+    "D3": 2,
+    "L1": 2
+  },
+  "figures": {
+    "faceCut": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 17,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 17,
+              "py": 198
+            },
+            {
+              "typ": 1,
+              "px": 15,
+              "py": 198
+            },
+            {
+              "typ": 1,
+              "px": 15,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 17,
+              "py": 0
+            }
+          ]
+        }
+      ]
+    ],
+    "faceBottom": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 17
+        },
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 11
+        },
+        {
+          "circle": true,
+          "cx": 13,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 12.557035741757888,
+          "cy": 3.3646475863327696,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 11.258330249197703,
+          "cy": 6.499999999999999,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 9.19238815542512,
+          "cy": 9.192388155425117,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 6.500000000000002,
+          "cy": 11.258330249197702,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 3.3646475863327723,
+          "cy": 12.557035741757886,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 7.960204194457795e-16,
+          "cy": 13,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -3.3646475863327683,
+          "cy": 12.557035741757888,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -6.499999999999997,
+          "cy": 11.258330249197703,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -9.192388155425117,
+          "cy": 9.19238815542512,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -11.2583302491977,
+          "cy": 6.500000000000004,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -12.557035741757886,
+          "cy": 3.364647586332773,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -13,
+          "cy": 1.592040838891559e-15,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -12.55703574175789,
+          "cy": -3.3646475863327647,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -11.258330249197705,
+          "cy": -6.4999999999999964,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -9.192388155425123,
+          "cy": -9.192388155425112,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -6.500000000000005,
+          "cy": -11.2583302491977,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -3.36464758633278,
+          "cy": -12.557035741757884,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -2.3880612583373385e-15,
+          "cy": -13,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 3.364647586332764,
+          "cy": -12.55703574175789,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 6.499999999999991,
+          "cy": -11.258330249197707,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 9.192388155425116,
+          "cy": -9.19238815542512,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 11.258330249197698,
+          "cy": -6.500000000000005,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 12.557035741757884,
+          "cy": -3.3646475863327803,
+          "radius": 1
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_vaxis_pole",
+        "face": "vaxis_faceCut",
+        "extrudeMethod": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_bottom",
+        "face": "vaxis_faceBottom",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_vaxis_top",
+        "face": "vaxis_faceBottom",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          196
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_vaxis",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_vaxis_pole",
+          "subpax_vaxis_bottom",
+          "subpax_vaxis_top"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "vaxis simTime: 0\nvaxis-height: 198.00 mm\nV-Axis drawn successfully!\n"
+}

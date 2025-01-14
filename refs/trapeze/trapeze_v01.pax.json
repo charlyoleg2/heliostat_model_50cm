@@ -1,0 +1,985 @@
+{
+  "partName": "trapeze",
+  "pDef": {
+    "partName": "trapeze",
+    "params": [
+      {
+        "name": "L1",
+        "unit": "mm",
+        "init": 1600,
+        "min": 10,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L2",
+        "unit": "mm",
+        "init": 1000,
+        "min": 10,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L3",
+        "unit": "mm",
+        "init": 400,
+        "min": 5,
+        "max": 800,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L4",
+        "unit": "mm",
+        "init": 300,
+        "min": 5,
+        "max": 800,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "outer frame",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "N1",
+        "unit": "",
+        "init": 7,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N2",
+        "unit": "",
+        "init": 4,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D1",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L5",
+        "unit": "mm",
+        "init": 100,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L6",
+        "unit": "mm",
+        "init": 20,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R1",
+        "unit": "mm",
+        "init": 60,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R2",
+        "unit": "mm",
+        "init": 20,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "inner pad",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "N3",
+        "unit": "",
+        "init": 2,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "N4",
+        "unit": "",
+        "init": 2,
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D2",
+        "unit": "mm",
+        "init": 10,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "L7",
+        "unit": "mm",
+        "init": 20,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "R3",
+        "unit": "mm",
+        "init": 20,
+        "min": 1,
+        "max": 400,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "diagonal shaft",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "D3",
+        "unit": "mm",
+        "init": 30,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "D4",
+        "unit": "mm",
+        "init": 26,
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H1",
+        "unit": "mm",
+        "init": 300,
+        "min": 0.5,
+        "max": 800,
+        "step": 0.5,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H2",
+        "unit": "mm",
+        "init": 2,
+        "min": 0.5,
+        "max": 800,
+        "step": 0.5,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "H3",
+        "unit": "mm",
+        "init": 5,
+        "min": 0.5,
+        "max": 800,
+        "step": 0.5,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "L1": "trapeze_top.svg",
+      "L2": "trapeze_top.svg",
+      "L3": "trapeze_top.svg",
+      "L4": "trapeze_top.svg",
+      "N1": "trapeze_top.svg",
+      "N2": "trapeze_top.svg",
+      "N3": "trapeze_top.svg",
+      "N4": "trapeze_top.svg",
+      "L5": "trapeze_top.svg",
+      "L6": "trapeze_top.svg",
+      "L7": "trapeze_top.svg",
+      "D1": "trapeze_top.svg",
+      "D2": "trapeze_top.svg",
+      "D3": "trapeze_rod.svg",
+      "D4": "trapeze_rod.svg",
+      "R1": "trapeze_top.svg",
+      "R2": "trapeze_top.svg",
+      "R3": "trapeze_top.svg",
+      "H1": "trapeze_side.svg",
+      "H2": "trapeze_side.svg",
+      "H3": "trapeze_side.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "L1": 80,
+    "L2": 50,
+    "L3": 40,
+    "L4": 30,
+    "outer frame": 0,
+    "N1": 7,
+    "N2": 4,
+    "D1": 2,
+    "L5": 5,
+    "L6": 2,
+    "R1": 2,
+    "R2": 6,
+    "inner pad": 0,
+    "N3": 2,
+    "N4": 2,
+    "D2": 3,
+    "L7": 3,
+    "R3": 2,
+    "diagonal shaft": 0,
+    "D3": 5,
+    "D4": 3,
+    "H1": 25,
+    "H2": 1,
+    "H3": 2
+  },
+  "figures": {
+    "faceFrame": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 23,
+              "py": 40
+            },
+            {
+              "typ": 1,
+              "px": -23,
+              "py": 40
+            },
+            {
+              "typ": 2,
+              "px": -25,
+              "py": 38,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -25,
+              "py": -38
+            },
+            {
+              "typ": 2,
+              "px": -23,
+              "py": -40,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 23,
+              "py": -40
+            },
+            {
+              "typ": 2,
+              "px": 25,
+              "py": -38,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 25,
+              "py": 38
+            },
+            {
+              "typ": 2,
+              "px": 23,
+              "py": 40,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 14,
+              "py": 35
+            },
+            {
+              "typ": 1,
+              "px": -14,
+              "py": 35
+            },
+            {
+              "typ": 2,
+              "px": -20,
+              "py": 29,
+              "radius": 6,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -20,
+              "py": -29
+            },
+            {
+              "typ": 2,
+              "px": -14,
+              "py": -35,
+              "radius": 6,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 14,
+              "py": -35
+            },
+            {
+              "typ": 2,
+              "px": 20,
+              "py": -29,
+              "radius": 6,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 20,
+              "py": 29
+            },
+            {
+              "typ": 2,
+              "px": 14,
+              "py": 35,
+              "radius": 6,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": -30,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": -30,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": -20,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": -20,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": -10,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": -10,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": 0,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": 10,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": 10,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": 20,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": 20,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 23,
+          "cy": 30,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -23,
+          "cy": 30,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -15,
+          "cy": 38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -15,
+          "cy": -38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -5,
+          "cy": 38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": -5,
+          "cy": -38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 5,
+          "cy": 38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 5,
+          "cy": -38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 15,
+          "cy": 38,
+          "radius": 1
+        },
+        {
+          "circle": true,
+          "cx": 15,
+          "cy": -38,
+          "radius": 1
+        }
+      ]
+    ],
+    "facePlate": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 13,
+              "py": 20
+            },
+            {
+              "typ": 1,
+              "px": -13,
+              "py": 20
+            },
+            {
+              "typ": 2,
+              "px": -15,
+              "py": 18,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": -15,
+              "py": -18
+            },
+            {
+              "typ": 2,
+              "px": -13,
+              "py": -20,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 13,
+              "py": -20
+            },
+            {
+              "typ": 2,
+              "px": 15,
+              "py": -18,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            },
+            {
+              "typ": 1,
+              "px": 15,
+              "py": 18
+            },
+            {
+              "typ": 2,
+              "px": 13,
+              "py": 20,
+              "radius": 2,
+              "large": false,
+              "ccw": true
+            }
+          ]
+        },
+        {
+          "circle": true,
+          "cx": 12,
+          "cy": -6.666666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -12,
+          "cy": -6.666666666666666,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 12,
+          "cy": 6.666666666666668,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -12,
+          "cy": 6.666666666666668,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -5,
+          "cy": 17,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": -5,
+          "cy": -17,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 5,
+          "cy": 17,
+          "radius": 1.5
+        },
+        {
+          "circle": true,
+          "cx": 5,
+          "cy": -17,
+          "radius": 1.5
+        }
+      ]
+    ],
+    "faceRod": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 2.5
+        }
+      ]
+    ],
+    "faceRodHollow": [
+      [
+        {
+          "circle": true,
+          "cx": 0,
+          "cy": 0,
+          "radius": 1.5
+        }
+      ]
+    ],
+    "faceCutRod": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 133.56498450336534,
+              "py": 133.56498450336534
+            },
+            {
+              "typ": 1,
+              "px": -133.56498450336534,
+              "py": 133.56498450336534
+            },
+            {
+              "typ": 1,
+              "px": -133.56498450336534,
+              "py": -133.56498450336534
+            },
+            {
+              "typ": 1,
+              "px": 133.56498450336534,
+              "py": -133.56498450336534
+            },
+            {
+              "typ": 1,
+              "px": 133.56498450336534,
+              "py": 133.56498450336534
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_trapeze_frame",
+        "face": "trapeze_faceFrame",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          24
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_plate",
+        "face": "trapeze_facePlate",
+        "extrudeMethod": 0,
+        "length": 2,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rod1",
+        "face": "trapeze_faceRod",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          1.1071487177940904
+        ],
+        "translate": [
+          11.199987307122505,
+          12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rod2",
+        "face": "trapeze_faceRod",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          2.0344439357957027
+        ],
+        "translate": [
+          -11.199987307122505,
+          12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rod3",
+        "face": "trapeze_faceRod",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          4.2487413713838835
+        ],
+        "translate": [
+          -11.199987307122505,
+          -12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rod4",
+        "face": "trapeze_faceRod",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          -1.1071487177940904
+        ],
+        "translate": [
+          11.199987307122505,
+          -12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rodH1",
+        "face": "trapeze_faceRodHollow",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          1.1071487177940904
+        ],
+        "translate": [
+          11.199987307122505,
+          12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rodH2",
+        "face": "trapeze_faceRodHollow",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          2.0344439357957027
+        ],
+        "translate": [
+          -11.199987307122505,
+          12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rodH3",
+        "face": "trapeze_faceRodHollow",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          4.2487413713838835
+        ],
+        "translate": [
+          -11.199987307122505,
+          -12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_rodH4",
+        "face": "trapeze_faceRodHollow",
+        "extrudeMethod": 0,
+        "length": 60.00082232516408,
+        "rotate": [
+          0,
+          0.7935286029968377,
+          -1.1071487177940904
+        ],
+        "translate": [
+          11.199987307122505,
+          -12.985761051871918,
+          -1.564162178201257
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_cut1",
+        "face": "trapeze_faceCutRod",
+        "extrudeMethod": 0,
+        "length": 133.56498450336534,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          -133.56498450336534
+        ]
+      },
+      {
+        "outName": "subpax_trapeze_cut2",
+        "face": "trapeze_faceCutRod",
+        "extrudeMethod": 0,
+        "length": 133.56498450336534,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          0,
+          0,
+          25
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "ipax_trapeze_rawRod",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_trapeze_rod1",
+          "subpax_trapeze_rod2",
+          "subpax_trapeze_rod3",
+          "subpax_trapeze_rod4"
+        ]
+      },
+      {
+        "outName": "ipax_trapeze_rodHollow",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_trapeze_rodH1",
+          "subpax_trapeze_rodH2",
+          "subpax_trapeze_rodH3",
+          "subpax_trapeze_rodH4"
+        ]
+      },
+      {
+        "outName": "ipax_trapeze_halfRods",
+        "boolMethod": 3,
+        "inList": [
+          "ipax_trapeze_rawRod",
+          "subpax_trapeze_cut1"
+        ]
+      },
+      {
+        "outName": "ipax_trapeze_rods",
+        "boolMethod": 3,
+        "inList": [
+          "ipax_trapeze_halfRods",
+          "subpax_trapeze_cut2"
+        ]
+      },
+      {
+        "outName": "ipax_trapeze_plus",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_trapeze_frame",
+          "subpax_trapeze_plate",
+          "ipax_trapeze_rods"
+        ]
+      },
+      {
+        "outName": "pax_trapeze",
+        "boolMethod": 3,
+        "inList": [
+          "ipax_trapeze_plus",
+          "ipax_trapeze_rodHollow"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "trapeze simTime: 0\nrod-slope:  length: 31.37 mm,  angle: 44.53 degree\nrod-xy-angle: 63.43 degree\nrod-footprint-length: 7.13 mm\ntrapeze drawn successfully!\n"
+}

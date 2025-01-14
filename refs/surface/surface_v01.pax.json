@@ -1,0 +1,2117 @@
+{
+  "partName": "surface",
+  "pDef": {
+    "partName": "surface",
+    "params": [
+      {
+        "name": "LH",
+        "unit": "mm",
+        "init": 1600,
+        "min": 10,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "LV",
+        "unit": "mm",
+        "init": 1000,
+        "min": 10,
+        "max": 4000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "LZ",
+        "unit": "mm",
+        "init": 40,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "nx",
+        "unit": "",
+        "init": 9,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "ny",
+        "unit": "",
+        "init": 9,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "main fantasia",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "main_direction",
+        "unit": "dropdown",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "dropdown": [
+          "horizontal",
+          "vertical"
+        ],
+        "pType": 2
+      },
+      {
+        "name": "crenel",
+        "unit": "checkbox",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "dropdown": [],
+        "pType": 1
+      },
+      {
+        "name": "first_row",
+        "unit": "",
+        "init": 9,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "second_row",
+        "unit": "",
+        "init": 9,
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "horizontal spacing",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "EH",
+        "unit": "mm",
+        "init": 10,
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EH_gradient",
+        "unit": "checkbox",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "dropdown": [],
+        "pType": 1
+      },
+      {
+        "name": "EH_sup",
+        "unit": "mm",
+        "init": 500,
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EH_cycle",
+        "unit": "",
+        "init": 1,
+        "min": 0,
+        "max": 3,
+        "step": 0.05,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EH_start",
+        "unit": "",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EH_shape",
+        "unit": "dropdown",
+        "init": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "dropdown": [
+          "sinusoid",
+          "triangle",
+          "sawUp",
+          "sawDown"
+        ],
+        "pType": 2
+      },
+      {
+        "name": "vertical spacing",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "EV",
+        "unit": "mm",
+        "init": 10,
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EV_gradient",
+        "unit": "checkbox",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "dropdown": [],
+        "pType": 1
+      },
+      {
+        "name": "EV_sup",
+        "unit": "mm",
+        "init": 500,
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EV_cycle",
+        "unit": "",
+        "init": 1,
+        "min": 0,
+        "max": 3,
+        "step": 0.05,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EV_start",
+        "unit": "",
+        "init": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "EV_shape",
+        "unit": "dropdown",
+        "init": 0,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "dropdown": [
+          "sinusoid",
+          "triangle",
+          "sawUp",
+          "sawDown"
+        ],
+        "pType": 2
+      },
+      {
+        "name": "solar power",
+        "unit": "section-separator",
+        "init": 0,
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "dropdown": [],
+        "pType": 3
+      },
+      {
+        "name": "power_efficiency",
+        "unit": "%",
+        "init": 16,
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "dropdown": [],
+        "pType": 0
+      },
+      {
+        "name": "solar_power",
+        "unit": "W/m2",
+        "init": 816,
+        "min": 100,
+        "max": 2000,
+        "step": 1,
+        "dropdown": [],
+        "pType": 0
+      }
+    ],
+    "paramSvg": {
+      "LH": "surface_main.svg",
+      "LV": "surface_main.svg",
+      "LZ": "surface_lz.svg",
+      "nx": "surface_main.svg",
+      "ny": "surface_main.svg",
+      "main_direction": "surface_crenel.svg",
+      "crenel": "surface_crenel.svg",
+      "first_row": "surface_extremities.svg",
+      "second_row": "surface_extremities.svg",
+      "EH": "surface_main.svg",
+      "EH_gradient": "surface_space_evolution.svg",
+      "EH_sup": "surface_space_evolution.svg",
+      "EH_cycle": "surface_space_evolution.svg",
+      "EH_start": "surface_space_evolution.svg",
+      "EH_shape": "surface_space_shape.svg",
+      "EV": "surface_main.svg",
+      "EV_gradient": "surface_space_evolution.svg",
+      "EV_sup": "surface_space_evolution.svg",
+      "EV_cycle": "surface_space_evolution.svg",
+      "EV_start": "surface_space_evolution.svg",
+      "EV_shape": "surface_space_shape.svg",
+      "power_efficiency": "surface_power.svg",
+      "solar_power": "surface_power.svg"
+    },
+    "sim": {
+      "tMax": 180,
+      "tStep": 0.5,
+      "tUpdate": 500
+    }
+  },
+  "params": {
+    "LH": 80,
+    "LV": 50,
+    "LZ": 1,
+    "nx": 5,
+    "ny": 7,
+    "main fantasia": 0,
+    "main_direction": 0,
+    "crenel": 0,
+    "first_row": 7,
+    "second_row": 7,
+    "horizontal spacing": 0,
+    "EH": 2,
+    "EH_gradient": 0,
+    "EH_sup": 500,
+    "EH_cycle": 1,
+    "EH_start": 0,
+    "EH_shape": 0,
+    "vertical spacing": 0,
+    "EV": 2,
+    "EV_gradient": 0,
+    "EV_sup": 500,
+    "EV_cycle": 1,
+    "EV_start": 0,
+    "EV_shape": 0,
+    "solar power": 0,
+    "power_efficiency": 16,
+    "solar_power": 816
+  },
+  "figures": {
+    "faceSurface": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -181
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -129
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -77
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": -25
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 27
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 79
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -204,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": -124,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -204,
+              "py": 131
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -181
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -129
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -77
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": -25
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 27
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 79
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -122,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": -42,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -122,
+              "py": 131
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -181
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -129
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -77
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": -25
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 27
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 79
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": -40,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 40,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": -40,
+              "py": 131
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -181
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -129
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -77
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": -25
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 27
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 79
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 42,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 122,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": 42,
+              "py": 131
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -181
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -131
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -181
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -129
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -79
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -129
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -77
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -27
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -77
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": -25
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 25
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": -25
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 27
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 77
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 27
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 79
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 129
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 79
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 124,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 131
+            },
+            {
+              "typ": 1,
+              "px": 204,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 181
+            },
+            {
+              "typ": 1,
+              "px": 124,
+              "py": 131
+            }
+          ]
+        }
+      ]
+    ],
+    "faceOnePanel": [
+      [
+        {
+          "circle": false,
+          "seg": [
+            {
+              "typ": 0,
+              "px": 0,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 0
+            },
+            {
+              "typ": 1,
+              "px": 80,
+              "py": 50
+            },
+            {
+              "typ": 1,
+              "px": 0,
+              "py": 50
+            },
+            {
+              "typ": 1,
+              "px": 0,
+              "py": 0
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "volume": {
+    "extrudes": [
+      {
+        "outName": "subpax_surface_panel_0",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          -181,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_1",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          -129,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_2",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          -77,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_3",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          -25,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_4",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          27,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_5",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          79,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_6",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -204,
+          131,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_7",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          -181,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_8",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          -129,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_9",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          -77,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_10",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          -25,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_11",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          27,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_12",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          79,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_13",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -122,
+          131,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_14",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          -181,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_15",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          -129,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_16",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          -77,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_17",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          -25,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_18",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          27,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_19",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          79,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_20",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          -40,
+          131,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_21",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          -181,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_22",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          -129,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_23",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          -77,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_24",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          -25,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_25",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          27,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_26",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          79,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_27",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          42,
+          131,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_28",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          -181,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_29",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          -129,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_30",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          -77,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_31",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          -25,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_32",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          27,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_33",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          79,
+          0
+        ]
+      },
+      {
+        "outName": "subpax_surface_panel_34",
+        "face": "surface_faceOnePanel",
+        "extrudeMethod": 0,
+        "length": 1,
+        "rotate": [
+          0,
+          0,
+          0
+        ],
+        "translate": [
+          124,
+          131,
+          0
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "outName": "pax_surface",
+        "boolMethod": 2,
+        "inList": [
+          "subpax_surface_panel_0",
+          "subpax_surface_panel_1",
+          "subpax_surface_panel_2",
+          "subpax_surface_panel_3",
+          "subpax_surface_panel_4",
+          "subpax_surface_panel_5",
+          "subpax_surface_panel_6",
+          "subpax_surface_panel_7",
+          "subpax_surface_panel_8",
+          "subpax_surface_panel_9",
+          "subpax_surface_panel_10",
+          "subpax_surface_panel_11",
+          "subpax_surface_panel_12",
+          "subpax_surface_panel_13",
+          "subpax_surface_panel_14",
+          "subpax_surface_panel_15",
+          "subpax_surface_panel_16",
+          "subpax_surface_panel_17",
+          "subpax_surface_panel_18",
+          "subpax_surface_panel_19",
+          "subpax_surface_panel_20",
+          "subpax_surface_panel_21",
+          "subpax_surface_panel_22",
+          "subpax_surface_panel_23",
+          "subpax_surface_panel_24",
+          "subpax_surface_panel_25",
+          "subpax_surface_panel_26",
+          "subpax_surface_panel_27",
+          "subpax_surface_panel_28",
+          "subpax_surface_panel_29",
+          "subpax_surface_panel_30",
+          "subpax_surface_panel_31",
+          "subpax_surface_panel_32",
+          "subpax_surface_panel_33",
+          "subpax_surface_panel_34"
+        ]
+      }
+    ]
+  },
+  "subs": {},
+  "log": "surface simTime: 0\npanel surface: 0.00 m2\npanel power: 0.52 W\nmax panel number: 35\nmax panel surface: 0.14 m2\nmax panel power: 18.28 W\nactual panel number: 35 (100.00 %)\nactual panel surface: 0.14 m2\nactual panel power: 18.28 W\nglobal horizontal width: 0.41 m\nglobal vertical height: 0.36 m\nglobal area: 0.15 m2\narea efficiency: 94.79 %\npanel-surface drawn successfully!\n"
+}
