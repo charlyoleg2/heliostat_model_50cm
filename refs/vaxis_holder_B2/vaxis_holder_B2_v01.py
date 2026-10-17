@@ -22,7 +22,7 @@ def ctr_face_vaxis_holder_facePetal_Fa0_Ctr1():
 	P000 = App.Vector(29.3974, -3.3593, 0)
 	P001 = App.Vector(26.1390, -1.8052, 0)
 	S000 = Part.LineSegment(P000, P001)
-	P002 = App.Vector(25.0000, 0.0000, 0)
+	P002 = App.Vector(25.0000, -0.0000, 0)
 	P003 = App.Vector(26.1390, 1.8052, 0)
 	S001 = Part.Arc(P001, P002, P003)
 	P004 = App.Vector(29.3974, 3.3593, 0)

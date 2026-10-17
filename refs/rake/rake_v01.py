@@ -351,7 +351,7 @@ def ctr_face_rake_faceHand_Fa0_Ctr0():
 	S003 = Part.LineSegment(P004, P005)
 	P006 = App.Vector(-12.9904, 117.5000, 0)
 	S004 = Part.LineSegment(P005, P006)
-	P007 = App.Vector(0.0000, 125.0000, 0)
+	P007 = App.Vector(-0.0000, 125.0000, 0)
 	P008 = App.Vector(12.9904, 117.5000, 0)
 	S005 = Part.Arc(P006, P007, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005])

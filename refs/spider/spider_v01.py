@@ -41,7 +41,7 @@ def ctr_face_spider_faceLegs_Fa0_Ctr0():
 	S011 = Part.LineSegment(P013, P014)
 	P015 = App.Vector(-2.5000, -1.6583, 0)
 	S012 = Part.LineSegment(P014, P015)
-	P016 = App.Vector(0.0000, 3.0000, 0)
+	P016 = App.Vector(-0.0000, 3.0000, 0)
 	P017 = App.Vector(2.5000, -1.6583, 0)
 	S013 = Part.Arc(P015, P016, P000)
 	aShape = Part.Shape([S000, S001, S002, S003, S004, S005, S006, S007, S008, S009, S010, S011, S012, S013])
